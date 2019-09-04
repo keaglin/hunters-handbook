@@ -7,6 +7,8 @@ const SearchInput = styled(SearchBox)`
   input {
     color: white;
     font-size: 2em;
+    height: 50px;
+    width: 300px;
     padding: 1rem;
     margin: 1rem;
     border: solid 0.5px slategrey;
@@ -31,7 +33,16 @@ const HitList = styled(Hits)`
   color: white;
   li {
     list-style: none;
+    background: transparent;
   }
+`
+
+const SearchWrapper = styled.div`
+  display: flex;
+  height: 200px;
+  width: 400px;
+  border: solid red 2px;
+  overflow: hidden;
 `
 
 const searchClient = algoliasearch(
@@ -41,10 +52,12 @@ const searchClient = algoliasearch(
 
 const Search = () => {
   return (
-    <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
-      <SearchInput />
-      <HitList hitComponent={Hit} />
-    </InstantSearch>
+    <SearchWrapper>
+      <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
+        <SearchInput />
+        <HitList hitComponent={Hit} />
+      </InstantSearch>
+    </SearchWrapper>
   )
 }
 
