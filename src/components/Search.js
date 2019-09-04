@@ -1,62 +1,49 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
 
-const Form = styled.form`
-  background: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-//need to overide styles until i figure out a better style solution
 const SearchInput = styled(SearchBox)`
   input {
     color: white;
     font-size: 2em;
-    height: 40px;
-    margin 1em;
-    padding: 4em;
-    background: tomato;
-    border-radius: 3px;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 0.5px slategrey;
+    outline: 1px double #333;
+    outline-offset: 3px;
+    background-image: linear-gradient(to top, #000 30%, #1d4753 100%);
+  }
+
+  input:hover {
+    box-shadow: 1px 0px 0px 3px #2e5d34;
+  }
+
+  li:focus {
+    box-shadow: 1px 0px 0px 3px #2e5d34;
   }
 `
-const Button = styled.button`
-  color: palevioletred;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+const Hit = ({ hit }) => <p>{hit.name}</p>
+
+const HitList = styled(Hits)`
+  background: black;
+  opacity: 0.4;
+  color: white;
+  li {
+    list-style: none;
+  }
 `
 
 const searchClient = algoliasearch(
-  '3PXCDFQMIE',
-  'dc6695ad2336b26a71391aa617bfc010'
+  'MT2HPEHTBE',
+  '91b84fdc5b74fbe6ecc908f7738f0e82'
 )
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('')
-
-  const handleChange = e => {
-    setSearchTerm(e.target.value)
-  }
-
-  const resetSearchInput = () => {
-    setSearchTerm('')
-  }
-
-  const submitSearch = e => {
-    e.preventDefault()
-    console.log(searchTerm)
-    resetSearchInput()
-  }
-
   return (
-    <InstantSearch searchClient={searchClient} indexName='test_Monsters'>
+    <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
       <SearchInput />
-      <Hits />
+      <HitList hitComponent={Hit} />
     </InstantSearch>
   )
 }
