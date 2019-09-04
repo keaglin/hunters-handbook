@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import algoliasearch from 'algoliasearch/lite'
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
 
 const Form = styled.form`
   background: grey;
@@ -8,12 +10,17 @@ const Form = styled.form`
   align-items: center;
 `
 
-const SearchInput = styled.input`
-  background: tomato;
-  border-radius: 3px;
-  color: white;
-  font-size: 2em;
-  height: 40px;
+//need to overide styles until i figure out a better style solution
+const SearchInput = styled(SearchBox)`
+  input {
+    color: white;
+    font-size: 2em;
+    height: 40px;
+    margin 1em;
+    padding: 4em;
+    background: tomato;
+    border-radius: 3px;
+  }
 `
 const Button = styled.button`
   color: palevioletred;
@@ -23,6 +30,11 @@ const Button = styled.button`
   border: 2px solid palevioletred;
   border-radius: 3px;
 `
+
+const searchClient = algoliasearch(
+  '3PXCDFQMIE',
+  'dc6695ad2336b26a71391aa617bfc010'
+)
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('')
@@ -42,12 +54,10 @@ const Search = () => {
   }
 
   return (
-    <Form>
-      <SearchInput value={searchTerm} onChange={handleChange} type='text' />
-      <Button onClick={submitSearch} type='submit'>
-        Search
-      </Button>
-    </Form>
+    <InstantSearch searchClient={searchClient} indexName='test_Monsters'>
+      <SearchInput />
+      <Hits />
+    </InstantSearch>
   )
 }
 
