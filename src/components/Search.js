@@ -9,8 +9,6 @@ const SearchInput = styled(SearchBox)`
     font-size: 2em;
     height: 50px;
     width: 300px;
-    padding: 1rem;
-    margin: 1rem;
     border: solid 0.5px slategrey;
     outline: 1px double #333;
     outline-offset: 3px;
@@ -25,23 +23,58 @@ const SearchInput = styled(SearchBox)`
     box-shadow: 1px 0px 0px 3px #2e5d34;
   }
 `
-const Hit = ({ hit }) => <p>{hit.name}</p>
+
+const HitItemWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 5px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  border-top: dashed 1px slategrey;
+  :focus {
+    outline: none;
+  }
+  :hover {
+    border-top: solid 1px rgba(105, 181, 100, 1);
+    border-bottom: solid 1px rgba(105, 181, 100, 1);
+  }
+`
+
+const Hit = ({ hit }) => (
+  <HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper>
+)
 
 const HitList = styled(Hits)`
-  background: black;
-  opacity: 0.4;
-  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  width: 300px;
+  color: #fafafa;
+  ul {
+    margin: 5px;
+    padding-left: 5px;
+  }
+
   li {
     list-style: none;
-    background: transparent;
+    text-shadow: 0 -1px 0 #fff;
+  }
+  li:hover {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(105, 181, 100, 1) 30%,
+      rgba(0, 0, 0, 0.6) 90%
+    );
+    outline: none;
   }
 `
 
 const SearchWrapper = styled.div`
   display: flex;
-  height: 200px;
-  width: 400px;
-  border: solid red 2px;
+  flex-direction: row;
+  height: 400px;
+  width: 1000px;
+
   overflow: hidden;
 `
 
