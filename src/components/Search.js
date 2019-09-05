@@ -74,7 +74,8 @@ const SearchWrapper = styled.div`
   flex-direction: row;
   height: 400px;
   width: 1000px;
-
+  margin-top: 10px;
+  margin-left: 10px;
   overflow: hidden;
 `
 
