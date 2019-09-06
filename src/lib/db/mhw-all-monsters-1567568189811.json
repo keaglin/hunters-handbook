@@ -6865,5 +6865,524 @@
       { "element": "stun", "stars": 1, "condition": null }
     ],
     "rewards": []
+  },
+  {
+    "id": 55,
+    "name": "Gajalaka",
+    "type": "small",
+    "species": "lynian",
+    "description": "The Gajalaka are aggressive towards large monsters and hunters, and will attack with status-afflicting weapons if threatened. The Gajalaka, if found and recruited in the Lynian Expert questline, will aid the hunters in their hunts. However, only certain ones will.",
+    "elements": [],
+    "ailments": [
+      {
+        "id": 8,
+        "name": "Poison",
+        "description": "Poison slowly drains the target\u0027s health.",
+        "recovery": {
+          "actions": [],
+          "items": [
+            {
+              "id": 5,
+              "name": "Antidote",
+              "description": "A cure for poison.",
+              "rarity": 1,
+              "value": 6,
+              "carryLimit": 10
+            },
+            {
+              "id": 6,
+              "name": "Herbal Medicine",
+              "description": "Removes all traces of poison and restores a slight amount of health.",
+              "rarity": 2,
+              "value": 25,
+              "carryLimit": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "name": "Paralysis",
+        "description": "Paralysis renders the hunter or monster immobilized and susceptible to increased damage for the duration. Hunters can unparalyzed if they are hit.",
+        "recovery": { "actions": [], "items": [] },
+        "protection": {
+          "skills": [
+            {
+              "id": 2,
+              "name": "Paralysis Resistance",
+              "description": "Reduces the duration of paralysis."
+            }
+          ],
+          "items": []
+        }
+      },
+      {
+        "id": 9,
+        "name": "Sleep",
+        "description": "Sleep renders the hunter or monster inactive and susceptible to increased damage, but only for the first hit, as it will then wake them up.",
+        "recovery": { "actions": [], "items": [] },
+        "protection": {
+          "skills": [
+            {
+              "id": 3,
+              "name": "Sleep Resistance",
+              "description": "Reduces the duration of sleep."
+            }
+          ],
+          "items": [
+            {
+              "id": 8,
+              "name": "Energy Drink",
+              "description": "A Guild-approved beverage that boosts your stamina. Helps shake off sleep, too!",
+              "rarity": 2,
+              "value": 6,
+              "carryLimit": 10
+            }
+          ]
+        }
+      }
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 2,
+        "name": "Wildspire Waste"
+      },
+      {
+        "id": 3,
+        "name": "Coral Highlands"
+      },
+      {
+        "id": 4,
+        "name": "Elder's Recess"
+      },
+      {
+        "id": 5,
+        "name": "Caverns of El Dorado"
+      }
+    ],
+    "resistances": [],
+    "weaknesses": [
+      {
+        "element": "thunder"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Grimalkyne",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 2,
+        "name": "Wildspire Waste"
+      },
+      {
+        "id": 3,
+        "name": "Coral Highlands"
+      },
+      {
+        "id": 4,
+        "name": "Rotten Vale"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Banbaro",
+    "type": "large",
+    "species": "herbivore",
+    "description": "A brute wyvern you first meet in the Hoarfrost Reach, Banbaro is a large bipedal monster with massive curved antlers. A herbivore, it won't attack unless provoked.",
+    "elements": ["dragon", "fire", "thunder"],
+    "ailments": [
+      {
+        "id": 1,
+        "name": "Blastblight",
+        "description": "Blastblight will cause a damaging explosion after a certain amount of time has passed, or upon sustaining a heavy impact.",
+        "recovery": {
+          "actions": [
+            "dodge"
+          ],
+          "items": []
+        },
+        "protection": {
+          "items": [],
+          "skills": [
+            {
+              "id": 6,
+              "name": "Blast Resistance",
+              "description": "Grants protection against blastblight."
+            }
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "name": "Stun",
+        "description": "Stun renders the target inactive, and sometimes causes them to fall over.",
+        "recovery": { "actions": [], "items": [] },
+        "protection": {
+          "skills": [
+            {
+              "id": 4,
+              "name": "Stun Resistance",
+              "description": "Reduces stun duration."
+            }
+          ],
+          "items": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Poison",
+        "description": "Poison slowly drains the target\u0027s health.",
+        "recovery": {
+          "actions": [],
+          "items": [
+            {
+              "id": 5,
+              "name": "Antidote",
+              "description": "A cure for poison.",
+              "rarity": 1,
+              "value": 6,
+              "carryLimit": 10
+            },
+            {
+              "id": 6,
+              "name": "Herbal Medicine",
+              "description": "Removes all traces of poison and restores a slight amount of health.",
+              "rarity": 2,
+              "value": 25,
+              "carryLimit": 10
+            }
+          ]
+        },
+        "protection": {
+          "skills": [
+            {
+              "id": 1,
+              "name": "Poison Resistance",
+              "description": "Grants protection against the effects of poison."
+            }
+          ],
+          "items": []
+        }
+      },
+      {
+        "id": 9,
+        "name": "Sleep",
+        "description": "Sleep renders the hunter or monster inactive and susceptible to increased damage, but only for the first hit, as it will then wake them up.",
+        "recovery": { "actions": [], "items": [] },
+        "protection": {
+          "skills": [
+            {
+              "id": 3,
+              "name": "Sleep Resistance",
+              "description": "Reduces the duration of sleep."
+            }
+          ],
+          "items": [
+            {
+              "id": 8,
+              "name": "Energy Drink",
+              "description": "A Guild-approved beverage that boosts your stamina. Helps shake off sleep, too!",
+              "rarity": 2,
+              "value": 6,
+              "carryLimit": 10
+            }
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "name": "Paralysis",
+        "description": "Paralysis renders the hunter or monster immobilized and susceptible to increased damage for the duration. Hunters can unparalyzed if they are hit.",
+        "recovery": { "actions": [], "items": [] },
+        "protection": {
+          "skills": [
+            {
+              "id": 2,
+              "name": "Paralysis Resistance",
+              "description": "Reduces the duration of paralysis."
+            }
+          ],
+          "items": []
+        }
+      }
+    ],
+    "resistances": [
+      {
+        "element": "water",
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "condition": null
+      }
+    ],
+    "weaknesses": [
+      {
+        "element": "dragon",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 1,
+        "condition": null
+      }
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      },
+      {
+        "id": 2,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 3,
+        "name": "Wildspire Waste"
+      },
+      {
+        "id": 4,
+        "name": "Coral Highlands"
+      },
+      {
+        "id": 5,
+        "name": "Rotten Vale"
+      },
+      {
+        "id": 6,
+        "name": "Elder's Recess"
+      }
+    ],
+    "rewards": [
+      
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Beotodus",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Viper Tobi-Kadachi",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Nightshade Paolumu",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 2,
+        "name": "Wildspire Waste"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Nargacuga",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 2,
+        "name": "Coral Highlands"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Barioth",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Glavenus",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Wildspire Waste"
+      },
+      {
+        "id": 2,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 3,
+        "name": "Elder's Recess"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Brachydios",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Elder's Recess"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Ebony Odogaron",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Coral Highlands"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Yian Garuga",
+    "locations": [
+      {
+        "id": 1,
+        "name": "More Hunting Required!"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Rajang",
+    "locations": [
+      {
+        "id": 1,
+        "name": "More Hunting Required!"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Coral Pukei-Pukei",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Coral Highlands"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Velkhana",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Shrieking Legiana",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Tigrex",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Wildspire Waste"
+      },
+      {
+        "id": 2,
+        "name": "Ancient Forest"
+      },
+      {
+        "id": 3,
+        "name": "Elder's Recess"
+      },
+      {
+        "id": 4,
+        "name": "Rotten Vale"
+      },
+      {
+        "id": 5,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Acidic Glavenus",
+    "locations": [
+      {
+        "id": 1,
+        "name": "More Hunting Required!"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Fulgur Anjanath",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Hoarfrost Reach"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Namielle",
+    "locations": [
+      {
+        "id": 1,
+        "name": "Coral Highlands"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Zinogre",
+    "locations": [
+      {
+        "id": 1,
+        "name": "More Hunting Required!"
+      }
+    ]
   }
 ]
