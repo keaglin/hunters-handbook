@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
+import { A } from 'hookrouter'
 
 const SearchInput = styled(SearchBox)`
   input {
@@ -42,13 +43,14 @@ const HitItemWrapper = styled.div`
 `
 
 const Hit = ({ hit }) => (
-  <HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper>
+  <A href={`/${hit.name}`}><HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper></A>
 )
 
 const HitList = styled(Hits)`
   background: rgba(0, 0, 0, 0.6);
   width: 300px;
   color: #fafafa;
+  
   ul {
     margin: 5px;
     padding-left: 5px;
@@ -66,6 +68,10 @@ const HitList = styled(Hits)`
       rgba(0, 0, 0, 0.6) 90%
     );
     outline: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 `
 

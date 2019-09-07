@@ -1,6 +1,9 @@
 import React from 'react'
 import Search from './components/Search'
+import Details from './components/Details'
+import NotFoundPage from './components/NotFoundPage'
 import styled from 'styled-components'
+import { useRoutes } from 'hookrouter'
 
 const TempWrapper = styled.div`
   height: 100vh;
@@ -14,10 +17,17 @@ const TempWrapper = styled.div`
   background-position: center center;
 `
 
+
+const routes = {
+    '/': () => <Search />,
+    '/:name': ({name}) => <Details name={name} />
+};
+
 function App() {
+  const routeResult = useRoutes(routes);
   return (
     <TempWrapper>
-      <Search />
+      { routeResult || <NotFoundPage /> }
     </TempWrapper>
   )
 }
