@@ -50,7 +50,7 @@ const HitList = styled(Hits)`
   background: rgba(0, 0, 0, 0.6);
   width: 300px;
   color: #fafafa;
-  
+
   ul {
     margin: 5px;
     padding-left: 5px;
@@ -89,6 +89,8 @@ const searchClient = algoliasearch(
   'MT2HPEHTBE',
   '91b84fdc5b74fbe6ecc908f7738f0e82'
 )
+
+// TODO make it keyboard navigable
 
 const Search = () => {
   return (
