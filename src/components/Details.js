@@ -59,6 +59,7 @@ const DetailWrapper = styled.div`
   }
   @media ${breakpoint.mobileL} {
     max-width: 370px;
+    max-height: 500px;
   }
 
   @media ${breakpoint.tablet} {
