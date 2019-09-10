@@ -77,6 +77,10 @@ const DetailWrapper = styled.div`
 const MonsterName = styled.h1`
   color: #61efff;
   text-transform: uppercase;
+  img {
+    height: 20px;
+    padding-right: 5px;
+  }
 `
 const MonsterDescription = styled.div`
   display: none;
@@ -149,7 +153,10 @@ const Details = props => {
   return (
     <DetailWrapper>
       <TitleWrapper>
-        <MonsterName>{'» ' + name}</MonsterName>
+        <MonsterName>
+          <img src='/img/transparent-arrow.svg' alt='arrow' />
+          {name}
+        </MonsterName>
         <div>
           <p>{species}</p>
           <p>{type}</p>
