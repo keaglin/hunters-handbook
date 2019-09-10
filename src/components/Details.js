@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { navigate } from 'hookrouter'
+import { breakpoint } from '../breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
-
 
 function findByName(name) {
   if (name.includes('%20')) {
@@ -13,35 +13,86 @@ function findByName(name) {
   return found
 }
 
+const detailScrollbarStyles = `
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #04b53c;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+}`
+
 const DetailWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 600px;
-  width: 1000px;
+  padding: 0rem 1rem;
+  height: 250px;
+  max-width: 400px;
   margin-top: 10px;
   margin-left: 10px;
-  overflow: hidden;
-  background: rgba(0,0,0,0.8);
+  overflow-y: auto;
+  outline: 1px double #333;
+  background: rgba(0, 0, 0, 0.8);
   color: white;
+  @media ${breakpoint.mobileL} {
+    max-width: 470px;
+  }
+
+  @media ${breakpoint.tablet} {
+    max-width: 600px;
+    height: 550px;
+  }
+
+  @media ${breakpoint.laptop} {
+    max-width: 900px;
+    height: 650px;
+  }
+  ${detailScrollbarStyles}
 `
 
-const IntroWrapper = styled.div`
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: auto;
-  table {
-    text-align: center;
+const MonsterName = styled.h1`
+  color: #0496ba;
+  text-transform: uppercase;
+`
+const MonsterDescription = styled.p`
+  display: none;
+  @media ${breakpoint.tablet} {
+    display: block;
   }
 `
 
-const StatsWrapper = styled.div`
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  li {
+const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content space-between;
+  align-items: center;
+`
+const MonsterDetails = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  ul {
     list-style: none;
   }
+`
+
+const MonsterDetailElement = styled.div`
+  padding: 1rem;
 `
 
 // const BackButton = styled.button`
@@ -50,45 +101,49 @@ const StatsWrapper = styled.div`
 
 // const TacticalStats = styled.div``
 
-const Details = (props) => {
+const Details = props => {
   console.log('props', props)
   const monster = findByName(props.name)
   console.log(monster)
-  const { name, description, elements, locations, ailments, resistances, 
-        weaknesses, type, species, rewards } = monster
+  const {
+    name,
+    description,
+    elements,
+    locations,
+    ailments,
+    resistances,
+    weaknesses,
+    type,
+    species,
+    rewards
+  } = monster
 
   return (
     <DetailWrapper>
-      <IntroWrapper>
-        <h1>{name}</h1>
-        <p>{description}</p>
-        <table>
-          <tbody>
-            <tr>
-              <th>Species</th>
-              <th>Type</th>
-            </tr>
-            <tr>
-              <td>{species}</td>
-              <td>{type}</td>
-            </tr>
-          </tbody>
-        </table>
-      </IntroWrapper>
-      <StatsWrapper>
+      <TitleWrapper>
+        <MonsterName>{name}</MonsterName>
         <div>
+          <p>{species}</p>
+          <p>{type}</p>
+        </div>
+      </TitleWrapper>
+      <MonsterDescription>{description}</MonsterDescription>
+      <MonsterDetails>
+        <MonsterDetailElement>
           <h2>Weaknesses</h2>
           <ul>
-          {weaknesses.map(weak => {
-            // need to sort this before displaying
+            {weaknesses.map(weak => {
+              // need to sort this before displaying
 
-            return (
-              <li key={weak.element}>
-                {weak.element} {"⭐".repeat(weak.stars)}
-              </li>
-            )
-          })}
+              return (
+                <li key={weak.element}>
+                  {weak.element} {'⭐'.repeat(weak.stars)}
+                </li>
+              )
+            })}
           </ul>
+        </MonsterDetailElement>
+        <MonsterDetailElement>
           <h2>Resistances</h2>
           <ul>
             {resistances.map(res => {
@@ -98,49 +153,41 @@ const Details = (props) => {
                 </li>
               )
             })}
-            </ul>
+          </ul>
+        </MonsterDetailElement>
+        <MonsterDetailElement>
           <h2>Elements</h2>
           <ul>
             {elements.map(el => {
-              return (
-                <li key={el}>
-                  {el}
-                </li>
-              )
+              return <li key={el}>{el}</li>
             })}
           </ul>
-        </div>
-        <div>
+        </MonsterDetailElement>
+        <MonsterDetailElement>
           <h2>Locations</h2>
           <ul>
             {locations.map(loc => {
-              return (
-                <li key={loc.id}>{loc.name}</li>
-              )
+              return <li key={loc.id}>{loc.name}</li>
             })}
           </ul>
+        </MonsterDetailElement>
+        <MonsterDetailElement>
           <h2>Ailments</h2>
           <ul>
             {ailments.map(ail => {
-              return (
-                <li key={ail.id}>
-                  {ail.name}
-                </li>
-                )
-              })}
+              return <li key={ail.id}>{ail.name}</li>
+            })}
           </ul>
+        </MonsterDetailElement>
+        <MonsterDetailElement>
           <h2>Rewards</h2>
           <ul>
             {rewards.map(rwd => {
-              return (
-                <li key={rwd.id}>
-                  {rwd.name}
-                </li>
-              )
+              return <li key={rwd.id}>{rwd.name}</li>
             })}
           </ul>
-        </div>
-      </StatsWrapper>
+        </MonsterDetailElement>
+      </MonsterDetails>
       <div>
         <button onClick={() => navigate('/')}>Back</button>
       </div>
