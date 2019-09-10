@@ -5,19 +5,42 @@ import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
 import { A } from 'hookrouter'
 
 const SearchInput = styled(SearchBox)`
+  width: 800px;
+  button {
+    border: none;
+    background: rgba(0, 0, 0);
+    opacity: 0.9;
+  }
+  form {
+    display: flex;
+    background: url('/img/searchoutline.png') no-repeat center 0,
+      url('/img/searchoutline-bottom.png') no-repeat center bottom;
+    margin-bottom: 5px;
+    width: 624px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input:focus {
+    outline: none;
+  }
   input {
+    border: none;
     color: white;
-    font-size: 2em;
-    height: 50px;
-    width: 300px;
-    border: solid 0.5px slategrey;
-    outline: 1px double #333;
-    outline-offset: 3px;
-    background-image: linear-gradient(to top, #000 30%, #1d4753 100%);
+    font-size: 1.7rem;
+    padding: 15px 10px 10px 0px;
+    margin: 5px;
+    height: 40px;
+    width: 404px;
+    background: rgba(0, 0, 0);
+    opacity: 0.9;
+  }
+  .submit-search {
+    height: 30px;
+    width: 30px;
   }
 
   input:hover {
-    box-shadow: 1px 0px 0px 3px #2e5d34;
   }
 
   li:focus {
@@ -29,9 +52,8 @@ const HitItemWrapper = styled.div`
   display: flex;
   align-items: center;
   height: 45px;
-  padding: 5px;
-  margin-top: 1px;
-  margin-bottom: 1px;
+
+  width: 615px;
   border-top: dashed 1px slategrey;
   :focus {
     outline: none;
@@ -43,17 +65,17 @@ const HitItemWrapper = styled.div`
 `
 
 const Hit = ({ hit }) => (
-  <A href={`/${hit.name}`}><HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper></A>
+  <A href={`/${hit.name}`}>
+    <HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper>
+  </A>
 )
 
 const HitList = styled(Hits)`
-  background: rgba(0, 0, 0, 0.6);
-  width: 300px;
   color: #fafafa;
-
+  margin-left: 5px;
   ul {
-    margin: 5px;
-    padding-left: 5px;
+    margin: 0px;
+    padding-left: 0px;
   }
 
   li {
@@ -77,11 +99,14 @@ const HitList = styled(Hits)`
 
 const SearchWrapper = styled.div`
   display: flex;
-  flex-direction: row;
   height: 400px;
-  width: 1000px;
-  margin-top: 10px;
-  margin-left: 10px;
+  width: 640px
+  border: 3px grey solid;
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(0, 0, 0);
+  opacity: 0.9;
+  margin-left: 50px;
   overflow: hidden;
 `
 
@@ -96,7 +121,18 @@ const Search = () => {
   return (
     <SearchWrapper>
       <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
-        <SearchInput />
+        <SearchInput
+          translations={{
+            placeholder: 'Enter Monster...'
+          }}
+          submit={
+            <img
+              src='/img/transparent-arrow.svg'
+              class='submit-search'
+              alt='search monster list'
+            />
+          }
+        />
         <HitList hitComponent={Hit} />
       </InstantSearch>
     </SearchWrapper>
