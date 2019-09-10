@@ -48,6 +48,10 @@ const DetailWrapper = styled.div`
   outline: 1px double #333;
   background: rgba(0, 0, 0, 0.8);
   color: white;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
   @media ${breakpoint.mobileL} {
     max-width: 470px;
   }
@@ -65,13 +69,15 @@ const DetailWrapper = styled.div`
 `
 
 const MonsterName = styled.h1`
-  color: #0496ba;
+  color: #069dc2;
   text-transform: uppercase;
 `
-const MonsterDescription = styled.p`
+const MonsterDescription = styled.div`
   display: none;
+  padding-top: 1rem;
   @media ${breakpoint.tablet} {
-    display: block;
+    display: inline;
+    padding-right: 3rem;
   }
 `
 
@@ -80,19 +86,30 @@ const TitleWrapper = styled.div`
   flex-direction: row;
   justify-content space-between;
   align-items: center;
-`
-const MonsterDetails = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 1rem;
-  ul {
-    list-style: none;
+  p {
+    margin: 0;
+
   }
 `
 
+const WeaknessDescriptionWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+const MonsterDetails = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: stretch;
+`
+
 const MonsterDetailElement = styled.div`
-  padding: 1rem;
+  padding-top: 1rem;
+`
+
+const MonsterDetailHeading = styled.h2`
+  padding: 0;
+  margin: 0;
 `
 
 // const BackButton = styled.button`
@@ -127,10 +144,57 @@ const Details = props => {
           <p>{type}</p>
         </div>
       </TitleWrapper>
-      <MonsterDescription>{description}</MonsterDescription>
-      <MonsterDetails>
+      <WeaknessDescriptionWrapper>
+        <MonsterDetails>
+          <MonsterDescription>{description}</MonsterDescription>
+          <MonsterDetailElement>
+            <MonsterDetailHeading>Locations</MonsterDetailHeading>
+            <ul>
+              {locations.map(loc => {
+                return <li key={loc.id}>{loc.name}</li>
+              })}
+            </ul>
+          </MonsterDetailElement>
+          <MonsterDetailElement>
+            <MonsterDetailHeading>Resistances</MonsterDetailHeading>
+            <ul>
+              {resistances.map(res => {
+                return (
+                  <li key={res.element}>
+                    {res.element} {res.condition && `when ${res.condition}`}
+                  </li>
+                )
+              })}
+            </ul>
+          </MonsterDetailElement>
+          <MonsterDetailElement>
+            <MonsterDetailHeading>Elements</MonsterDetailHeading>
+            <ul>
+              {elements.map(el => {
+                return <li key={el}>{el}</li>
+              })}
+            </ul>
+          </MonsterDetailElement>
+
+          <MonsterDetailElement>
+            <MonsterDetailHeading>Ailments</MonsterDetailHeading>
+            <ul>
+              {ailments.map(ail => {
+                return <li key={ail.id}>{ail.name}</li>
+              })}
+            </ul>
+          </MonsterDetailElement>
+          <MonsterDetailElement>
+            <MonsterDetailHeading>Rewards</MonsterDetailHeading>
+            <ul>
+              {rewards.map(rwd => {
+                return <li key={rwd.id}>{rwd.name}</li>
+              })}
+            </ul>
+          </MonsterDetailElement>
+        </MonsterDetails>
         <MonsterDetailElement>
-          <h2>Weaknesses</h2>
+          <MonsterDetailHeading>Weaknesses</MonsterDetailHeading>
           <ul>
             {weaknesses.map(weak => {
               // need to sort this before displaying
@@ -143,51 +207,8 @@ const Details = props => {
             })}
           </ul>
         </MonsterDetailElement>
-        <MonsterDetailElement>
-          <h2>Resistances</h2>
-          <ul>
-            {resistances.map(res => {
-              return (
-                <li key={res.element}>
-                  {res.element} {res.condition && `when ${res.condition}`}
-                </li>
-              )
-            })}
-          </ul>
-        </MonsterDetailElement>
-        <MonsterDetailElement>
-          <h2>Elements</h2>
-          <ul>
-            {elements.map(el => {
-              return <li key={el}>{el}</li>
-            })}
-          </ul>
-        </MonsterDetailElement>
-        <MonsterDetailElement>
-          <h2>Locations</h2>
-          <ul>
-            {locations.map(loc => {
-              return <li key={loc.id}>{loc.name}</li>
-            })}
-          </ul>
-        </MonsterDetailElement>
-        <MonsterDetailElement>
-          <h2>Ailments</h2>
-          <ul>
-            {ailments.map(ail => {
-              return <li key={ail.id}>{ail.name}</li>
-            })}
-          </ul>
-        </MonsterDetailElement>
-        <MonsterDetailElement>
-          <h2>Rewards</h2>
-          <ul>
-            {rewards.map(rwd => {
-              return <li key={rwd.id}>{rwd.name}</li>
-            })}
-          </ul>
-        </MonsterDetailElement>
-      </MonsterDetails>
+      </WeaknessDescriptionWrapper>
+
       <div>
         <button onClick={() => navigate('/')}>Back</button>
       </div>
