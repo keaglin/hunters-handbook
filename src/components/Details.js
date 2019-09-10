@@ -26,12 +26,12 @@ const detailScrollbarStyles = `
   background-color: #04b53c;
   background-image: -webkit-linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 15%,
     transparent 25%,
-    transparent 50%,
+    transparent 10%,
     rgba(255, 255, 255, 0.2) 50%,
     rgba(255, 255, 255, 0.2) 75%,
-    transparent 75%,
+    transparent 25%,
     transparent
   );
 }`
@@ -41,19 +41,24 @@ const DetailWrapper = styled.div`
   flex-direction: column;
   padding: 0rem 1rem;
   height: 250px;
-  max-width: 400px;
+  max-width: 350px;
   margin-top: 10px;
   margin-left: 10px;
   overflow-y: auto;
-  outline: 1px double #333;
+  outline: 3px double #333;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+  }
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   @media ${breakpoint.mobileL} {
-    max-width: 470px;
+    max-width: 370px;
   }
 
   @media ${breakpoint.tablet} {
@@ -62,22 +67,24 @@ const DetailWrapper = styled.div`
   }
 
   @media ${breakpoint.laptop} {
-    max-width: 900px;
+    max-width: 700px;
     height: 650px;
   }
   ${detailScrollbarStyles}
 `
 
 const MonsterName = styled.h1`
-  color: #069dc2;
+  color: #61efff;
   text-transform: uppercase;
 `
 const MonsterDescription = styled.div`
   display: none;
-  padding-top: 1rem;
-  @media ${breakpoint.tablet} {
+  padding-top: 0.5rem;
+  align-items: center;
+  @media ${breakpoint.laptop} {
     display: inline;
     padding-right: 3rem;
+    width: 500px;
   }
 `
 
@@ -100,16 +107,19 @@ const MonsterDetails = styled.div`
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  align-items: stretch;
 `
 
 const MonsterDetailElement = styled.div`
+  max-width: 220px;
   padding-top: 1rem;
 `
 
-const MonsterDetailHeading = styled.h2`
-  padding: 0;
+const MonsterDetailHeading = styled.h3`
+  border-bottom: 1px dashed grey;
+  color: #61efff;
+  padding-bottom: 3px;
   margin: 0;
+  margin-bottom: 1rem;
 `
 
 // const BackButton = styled.button`
@@ -138,7 +148,7 @@ const Details = props => {
   return (
     <DetailWrapper>
       <TitleWrapper>
-        <MonsterName>{name}</MonsterName>
+        <MonsterName>{'» ' + name}</MonsterName>
         <div>
           <p>{species}</p>
           <p>{type}</p>
