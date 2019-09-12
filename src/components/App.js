@@ -1,7 +1,7 @@
 import React from 'react'
-import Search from './components/Search'
-import Details from './components/Details'
-import NotFoundPage from './components/NotFoundPage'
+import Search from './Search'
+import Details from './Details'
+import NotFoundPage from './NotFoundPage'
 import styled from 'styled-components'
 import { useRoutes } from 'hookrouter'
 

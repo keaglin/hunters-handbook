@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.4.0",
     "algoliasearch": "^3.34.0",
-    "axios": "^0.19.0",
+    "aws-sdk": "^2.526.0",
     "hookrouter": "^1.2.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -13,9 +14,9 @@
     "styled-components": "^4.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -32,5 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "0.0.12",
+    "react-app-rewired": "^1.6.2"
   }
 }
