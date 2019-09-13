@@ -9358,38 +9358,22 @@
   {
     "id" : 58,
     "name" : "Beotodus",
-    "type": "",
-    "species": "",
-    "description": "",
-    "elements": [],
-    "ailments": [],
-    "resistances": [],
-    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ],
-    "rewards": []
+    ]
   },
   {
     "id" : 59,
     "name" : "Viper Tobi-Kadachi",
-    "type": "",
-    "species": "",
-    "description": "",
-    "elements": [],
-    "ailments": [],
-    "resistances": [],
-    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ],
-    "rewards": []
+    ]
   },
   {
     "id" : 60,

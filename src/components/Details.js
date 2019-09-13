@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { navigate } from 'hookrouter'
 import { breakpoint } from '../breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
 
@@ -96,7 +95,7 @@ const MonsterDescription = styled.div`
 const TitleWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content space-between;
+  justify-content: space-between;
   align-items: center;
   p {
     margin: 0;
@@ -127,12 +126,6 @@ const MonsterDetailHeading = styled.h3`
   margin-bottom: 1rem;
 `
 
-// const BackButton = styled.button`
-
-// `
-
-// const TacticalStats = styled.div``
-
 const Details = props => {
   console.log('props', props)
   const monster = findByName(props.name)
@@ -150,6 +143,8 @@ const Details = props => {
     rewards
   } = monster
 
+
+  // TODO clean this up -- see notes
   return (
     <DetailWrapper>
       <TitleWrapper>
@@ -168,67 +163,81 @@ const Details = props => {
           <MonsterDetailElement>
             <MonsterDetailHeading>Locations</MonsterDetailHeading>
             <ul>
-              {locations.map(loc => {
-                return <li key={loc.id}>{loc.name}</li>
-              })}
+            {(locations && locations.length > 0) ? locations.map(loc => {
+              return (
+                <li key={loc.id}>{loc.name}</li>
+              )
+            }) : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Resistances</MonsterDetailHeading>
             <ul>
-              {resistances.map(res => {
-                return (
-                  <li key={res.element}>
-                    {res.element} {res.condition && `when ${res.condition}`}
-                  </li>
-                )
-              })}
+            {(resistances && resistances.length > 0) ? resistances.map(res => {
+              return (
+                <li key={res.element}>
+                  {res.element} {res.condition && `when ${res.condition}`}
+                </li>
+              )
+            }) : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Elements</MonsterDetailHeading>
             <ul>
-              {elements.map(el => {
-                return <li key={el}>{el}</li>
-              })}
-            </ul>
+            {(elements && elements.length > 0) ? elements.map(el => {
+              return (
+                <li key={el}>
+                  {el}
+                </li>
+              )
+            }) : ''}
+          </ul>
           </MonsterDetailElement>
 
           <MonsterDetailElement>
             <MonsterDetailHeading>Ailments</MonsterDetailHeading>
             <ul>
-              {ailments.map(ail => {
-                return <li key={ail.id}>{ail.name}</li>
-              })}
+            {(ailments && ailments.length > 0) ? ailments.map(ail => {
+              return (
+                <li key={ail.id}>
+                  {ail.name}
+                </li>
+                )
+              }) : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Rewards</MonsterDetailHeading>
             <ul>
-              {rewards.map(rwd => {
-                return <li key={rwd.id}>{rwd.name}</li>
-              })}
+            {(rewards && rewards.length > 0) ? rewards.map(rwd => {
+              return (
+                <li key={weak.element}>
+                  {weak.element} {'⭐'.repeat(weak.stars)}
+                </li>
+              )
+            }) : ''}
             </ul>
           </MonsterDetailElement>
         </MonsterDetails>
         <MonsterDetailElement>
           <MonsterDetailHeading>Weaknesses</MonsterDetailHeading>
           <ul>
-            {weaknesses.map(weak => {
-              // need to sort this before displaying
-
-              return (
-                <li key={weak.element}>
-                  {weak.element} {'⭐'.repeat(weak.stars)}
-                </li>
-              )
-            })}
-          </ul>
+          {(weaknesses && weaknesses.length > 0) ? weaknesses
+          .sort((a, b) => (a.stars > b.stars) ? -1 : 1)
+          .map(weak => {
+            return (
+              <li key={weak.element}>
+                {weak.element} {"⭐".repeat(weak.stars)}
+              </li>
+            )
+          }) : ''}
+          </ul>          
         </MonsterDetailElement>
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={() => navigate('/')}>Back</button>
+        <button onClick={() => <Search />}>Back</button>
       </div>
     </DetailWrapper>
   )
