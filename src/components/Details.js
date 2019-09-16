@@ -123,30 +123,17 @@ const MonsterDetailHeading = styled.h3`
 `
 
 const Details = props => {
-  const [MonsterObject, setMonster] = useState({
-    name: '',
-    description: '',
-    elements: '',
-    locations: '',
-    ailments: '',
-    resistances: '',
-    weaknesses: '',
-    type: '',
-    species: '',
-    rewards: ''
-  })
 
-  function findByName(name) {
-    if ( name && name.includes('%20')) {
-      name = name.replace('%20', ' ')
-    }
+
+
+
+ const findByName = (monsterName) => {
     const db = dbModule.default
-    const found = db.find(monster => monster.name === name)
-    setMonster()
+    const found = db.find(monster => monsterName === monster.name) 
     return found
   }
 
-  console.log(props)
+
      const {
     name,
     description,
@@ -158,10 +145,8 @@ const Details = props => {
     type,
     species,
     rewards
-  } = MonsterObject
+  } = findByName(props.monsterName)
   
-  
-
 
   // TODO clean this up -- see notes
   return (

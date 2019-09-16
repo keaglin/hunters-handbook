@@ -5,6 +5,7 @@ import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch} from 'react-instantsearch-dom'
 import {HitItemWrapper, SearchWrapper, HitList, SearchInput} from './styles.js'
 
+
 const TempWrapper = styled.div`
   height: 100vh;
   width: 100%;
@@ -26,10 +27,8 @@ const searchClient = algoliasearch(
 const App = () => {
   const [toggleDetails, setToggleDetails] = useState(false)
   const [currentMonsterName, setMonsterName] = useState('')
-  const toggleSearch = (currentMonsterName) => {
+  const toggleSearch = () => {
     setToggleDetails(!toggleDetails)
-    
-    console.log(currentMonsterName)
    }
 
    const handleMonsterClick = (currentMonsterName) => {
