@@ -1,10 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import { breakpoint } from '../breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
 
+const {Monster, setMonster} = useState({
+  name: '',
+  description: '',
+  elements: '',
+  locations: '',
+  ailments: '',
+  resistances: '',
+  weaknesses: '',
+  type: '',
+  species: '',
+  rewards: ''
+})
+
+
 function findByName(name) {
-  if (name.includes('%20')) {
+  if ( name && name.includes('%20')) {
     name = name.replace('%20', ' ')
   }
   const db = dbModule.default
@@ -128,9 +142,9 @@ const MonsterDetailHeading = styled.h3`
 
 const Details = props => {
   console.log('props', props)
-  const monster = findByName(props.name)
-  console.log(monster)
-  const {
+   if (props.name) {
+     const monster = findByName(props.name)
+     const {
     name,
     description,
     elements,
@@ -142,6 +156,8 @@ const Details = props => {
     species,
     rewards
   } = monster
+   } 
+  
 
 
   // TODO clean this up -- see notes
@@ -212,8 +228,8 @@ const Details = props => {
             <ul>
             {(rewards && rewards.length > 0) ? rewards.map(rwd => {
               return (
-                <li key={weak.element}>
-                  {weak.element} {'⭐'.repeat(weak.stars)}
+                <li key={weaknesses.element}>
+                  {weaknesses.element} {'⭐'.repeat(weaknesses.stars)}
                 </li>
               )
             }) : ''}
@@ -237,7 +253,7 @@ const Details = props => {
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={() => <Search />}>Back</button>
+        <button >Back</button>
       </div>
     </DetailWrapper>
   )
