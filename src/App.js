@@ -26,17 +26,15 @@ const searchClient = algoliasearch(
 const App = () => {
   const [toggleDetails, setToggleDetails] = useState(false)
   const toggleSearch = () => {
-    console.log('toggle search')
     setToggleDetails(!toggleDetails)
     console.log(toggleDetails)
    }
    const Hit = ({ hit }) => (
     <HitItemWrapper onClick={toggleSearch} tabIndex='0'>{hit.name}</HitItemWrapper>
   )
-  
-  return (
-    <TempWrapper>
-      <SearchWrapper>
+
+  const Search = (
+    <SearchWrapper>
       <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
         <SearchInput
           translations={{
@@ -53,7 +51,12 @@ const App = () => {
         <HitList hitComponent={Hit} />
       </InstantSearch>
     </SearchWrapper>
-     <Details />
+  )
+  
+  return (
+    <TempWrapper>
+      {toggleDetails ? <Details toggleSearch={toggleSearch} /> : Search}
+  
     </TempWrapper>
   )
 }

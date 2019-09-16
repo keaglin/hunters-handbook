@@ -146,7 +146,7 @@ const Details = props => {
     return found
   }
 
-  console.log('props', props)
+  console.log(props)
      const {
     name,
     description,
@@ -256,7 +256,7 @@ const Details = props => {
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button >Back</button>
+        <button onClick={props.toggleSearch} >Back</button>
       </div>
     </DetailWrapper>
   )
