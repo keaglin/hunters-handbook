@@ -25,12 +25,21 @@ const searchClient = algoliasearch(
 
 const App = () => {
   const [toggleDetails, setToggleDetails] = useState(false)
-  const toggleSearch = () => {
+  const [currentMonsterName, setMonsterName] = useState('')
+  const toggleSearch = (currentMonsterName) => {
     setToggleDetails(!toggleDetails)
-    console.log(toggleDetails)
+    
+    console.log(currentMonsterName)
    }
-   const Hit = ({ hit }) => (
-    <HitItemWrapper onClick={toggleSearch} tabIndex='0'>{hit.name}</HitItemWrapper>
+
+   const handleMonsterClick = (currentMonsterName) => {
+    setMonsterName(currentMonsterName)
+    toggleSearch()
+   }
+   
+   const Hit = ({ hit }) => 
+   (
+    <HitItemWrapper onClick={() => handleMonsterClick(hit.name)} tabIndex='0'>{hit.name}</HitItemWrapper>
   )
 
   const Search = (
@@ -55,7 +64,7 @@ const App = () => {
   
   return (
     <TempWrapper>
-      {toggleDetails ? <Details toggleSearch={toggleSearch} /> : Search}
+      {toggleDetails ? <Details monsterName={currentMonsterName} toggleSearch={toggleSearch} />  : Search }
   
     </TempWrapper>
   )
