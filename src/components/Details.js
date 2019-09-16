@@ -3,28 +3,10 @@ import styled from 'styled-components'
 import { breakpoint } from '../breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
 
-const {Monster, setMonster} = useState({
-  name: '',
-  description: '',
-  elements: '',
-  locations: '',
-  ailments: '',
-  resistances: '',
-  weaknesses: '',
-  type: '',
-  species: '',
-  rewards: ''
-})
 
 
-function findByName(name) {
-  if ( name && name.includes('%20')) {
-    name = name.replace('%20', ' ')
-  }
-  const db = dbModule.default
-  const found = db.find(monster => monster.name === name)
-  return found
-}
+
+
 
 const detailScrollbarStyles = `
 ::-webkit-scrollbar-track {
@@ -141,9 +123,30 @@ const MonsterDetailHeading = styled.h3`
 `
 
 const Details = props => {
+  const [MonsterObject, setMonster] = useState({
+    name: '',
+    description: '',
+    elements: '',
+    locations: '',
+    ailments: '',
+    resistances: '',
+    weaknesses: '',
+    type: '',
+    species: '',
+    rewards: ''
+  })
+
+  function findByName(name) {
+    if ( name && name.includes('%20')) {
+      name = name.replace('%20', ' ')
+    }
+    const db = dbModule.default
+    const found = db.find(monster => monster.name === name)
+    setMonster()
+    return found
+  }
+
   console.log('props', props)
-   if (props.name) {
-     const monster = findByName(props.name)
      const {
     name,
     description,
@@ -155,8 +158,8 @@ const Details = props => {
     type,
     species,
     rewards
-  } = monster
-   } 
+  } = MonsterObject
+  
   
 
 
