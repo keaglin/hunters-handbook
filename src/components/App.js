@@ -8,7 +8,7 @@ import {
   SearchWrapper,
   HitList,
   SearchInput
-} from './styles.js'
+} from '../styles.js'
 
 const TempWrapper = styled.div`
   height: 100vh;
