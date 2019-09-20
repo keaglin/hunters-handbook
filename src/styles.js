@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import {SearchBox, Hits } from 'react-instantsearch-dom'
+import { SearchBox, Hits } from 'react-instantsearch-dom'
 
+// TODO: fonts
 
 export const SearchInput = styled(SearchBox)`
 width: 800px;

@@ -56,22 +56,14 @@ module.exports = config => {
     }
   }
 
-  // console.log('config before assignment', config)
-  // console.log('entry', entry)
-  // console.log('output', output)
   config = {
-    //entry points for webpack- remove if not used/needed
     ...config,
     entry,
     output,
-    // plugins,
     optimization: {
       minimize: false // neccessary to pass Twitch's review process
     },
   }
-
-
-  console.log('config after assignment', config)
 
   return config
 }

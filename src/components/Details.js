@@ -1,12 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-import { breakpoint } from '../breakpoints'
+import { breakpoint } from '../lib/breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
-
-
-
-
-
 
 const detailScrollbarStyles = `
 ::-webkit-scrollbar-track {
@@ -103,6 +98,7 @@ const WeaknessDescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `
+
 const MonsterDetails = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -122,19 +118,15 @@ const MonsterDetailHeading = styled.h3`
   margin-bottom: 1rem;
 `
 
+const findByName = (monsterName) => {
+  const db = dbModule.default
+  const found = db.find(monster => monsterName === monster.name) 
+  return found
+}
+
 const Details = props => {
-
-
-
-
- const findByName = (monsterName) => {
-    const db = dbModule.default
-    const found = db.find(monster => monsterName === monster.name) 
-    return found
-  }
-
-
-     const {
+  
+  const {
     name,
     description,
     elements,
@@ -146,7 +138,6 @@ const Details = props => {
     species,
     rewards
   } = findByName(props.monsterName)
-  
 
   // TODO clean this up -- see notes
   return (
@@ -216,8 +207,8 @@ const Details = props => {
             <ul>
             {(rewards && rewards.length > 0) ? rewards.map(rwd => {
               return (
-                <li key={weaknesses.element}>
-                  {weaknesses.element} {'⭐'.repeat(weaknesses.stars)}
+                <li key={rwd.id}>
+                  {rwd.condition} {rwd.item.name} {rwd.item.rarity} {rwd.item.carryLimit} {rwd.item.value} <br /> 
                 </li>
               )
             }) : ''}
@@ -236,12 +227,12 @@ const Details = props => {
               </li>
             )
           }) : ''}
-          </ul>          
+          </ul>
         </MonsterDetailElement>
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={props.toggleSearch} >Back</button>
+        <button onClick={props.toggleSearch}>Back</button>
       </div>
     </DetailWrapper>
   )

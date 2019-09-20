@@ -36,6 +36,4 @@ for (name in entryPoints) {
       filename: entryPoints[name].outputHtml
     }))
   }     
-} 
-console.log(entry) 
-console.log(output)
+}
