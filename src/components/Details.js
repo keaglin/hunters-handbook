@@ -205,7 +205,8 @@ const Details = props => {
                 ? rewards.map(rwd => {
                     return (
                       <li key={rwd.id}> 
-                        {rwd.condition} {rwd.item.name} {rwd.item.rarity} {rwd.item.carryLimit} {rwd.item.value}
+                        {rwd.condition} {rwd.item.name} {rwd.item.rarity} 
+                        {rwd.item.carryLimit} {rwd.item.value}
                       </li>
                     )
                   })
