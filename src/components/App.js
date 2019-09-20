@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Search from './Search'
 import Details from './Details'
 import NotFoundPage from './NotFoundPage'
@@ -17,18 +17,26 @@ const TempWrapper = styled.div`
   background-position: center center;
 `
 
-const routes = {
-    '/': () => <Search />,
-    '/:name': ({name}) => <Details name={name} />
-};
+// const routes = {
+//     '/': () => <Search />,
+//     '/details': (props) => <Details name={props.hit.name} />
+// };
+
+// function App() {
+//   const routeResult = useRoutes(routes);
+//   return (
+//     <TempWrapper>
+//       { routeResult || <NotFoundPage /> }
+//     </TempWrapper>
+//   )
+// }
+
 
 function App() {
-  const routeResult = useRoutes(routes);
-  return (
-    <TempWrapper>
-      { routeResult || <NotFoundPage /> }
-    </TempWrapper>
-  )
+  const [results, showResults] = useState(false)
+  // if results? show details
+  // if !results? show search
+  return results ? <Details /> : <Search results={results} showResults={showResults} />
 }
 
 export default App

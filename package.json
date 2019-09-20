@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.4.0",
     "algoliasearch": "^3.34.0",
     "aws-sdk": "^2.526.0",
     "hookrouter": "^1.2.3",
@@ -15,7 +14,7 @@
   },
   "scripts": {
     "start": "rescripts start",
-    "build": "rescripts build",
+    "build": "rm -rf build && rescripts build",
     "test": "rescripts test",
     "eject": "react-scripts eject"
   },
@@ -35,7 +34,6 @@
     ]
   },
   "devDependencies": {
-    "@rescripts/cli": "0.0.12",
-    "react-app-rewired": "^1.6.2"
+    "@rescripts/cli": "0.0.12"
   }
 }

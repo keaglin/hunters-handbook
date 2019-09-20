@@ -1,10 +1,7 @@
-const fs = require('fs')
-const path = require("path")
-const webpack = require("webpack")
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { replaceWebpackPlugin } = require('@rescripts/utilities')
+const path = require('path')
 
-module.exports = (config, argv) => {
+module.exports = config => {
   let entryPoints = {
     VideoComponent: {
       path: "./src/VideoComponent.js",
@@ -41,10 +38,9 @@ module.exports = (config, argv) => {
   for (name in entryPoints) {
     if (entryPoints[name].build) {
       entry[name] = entryPoints[name].path
-      // output.filename = '[name].bundle.js'
-      if (argv && argv.mode === 'production') {
+      if (config.mode === 'production') {
         plugins.push(new HtmlWebpackPlugin({
-          // inject: true,
+          inject: true,
           chunks: [name],
           template: './template.html',
           filename: entryPoints[name].outputHtml
@@ -54,18 +50,26 @@ module.exports = (config, argv) => {
     }    
   }
 
+  if (config.mode === 'development') {
+    config.devServer = {
+      contentBase: path.join(__dirname,'public')
+    }
+  }
+
   // console.log('config before assignment', config)
-  console.log('entry', entry)
-  console.log('output', output)
+  // console.log('entry', entry)
+  // console.log('output', output)
   config = {
     //entry points for webpack- remove if not used/needed
     ...config,
     entry,
     output,
+    // plugins,
     optimization: {
       minimize: false // neccessary to pass Twitch's review process
     },
   }
+
 
   console.log('config after assignment', config)
 

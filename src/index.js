@@ -1,12 +1,41 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './components/App'
-import * as serviceWorker from './serviceWorker'
-
-ReactDOM.render(<App />, document.getElementById('root'))
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister()
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+ 
+let entryPoints = {
+  VideoComponent: {
+    path: "./src/VideoComponent.js", 
+    outputHtml: "video_component.html", 
+    build: true
+  },
+  Config: {
+    path: "./src/Config.js", 
+    outputHtml: "config.html", 
+    build: true
+  },
+  LiveConfig: {
+    path: "./src/LiveConfig.js",
+    outputHtml: "live_config.html",
+    build: true
+  },
+  Mobile: {
+    path: "./src/Mobile.js",
+    outputHtml: "mobile.html",
+    build: true
+  }
+}
+ 
+let entry = {}
+let output = []
+for (name in entryPoints) {
+  // console.log(name) 
+  if (entryPoints[name].build) {
+    entry[name] = entryPoints[name].path
+    output.push(new HtmlWebpackPlugin({
+      inject: true,
+      chunks: name,
+      template: './template.html',
+      filename: entryPoints[name].outputHtml
+    }))
+  }     
+} 
+console.log(entry) 
+console.log(output)
