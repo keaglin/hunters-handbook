@@ -201,15 +201,6 @@ const Details = props => {
           <MonsterDetailElement>
             <MonsterDetailHeading>Rewards</MonsterDetailHeading>
             <ul>
-<<<<<<< HEAD
-            {(rewards && rewards.length > 0) ? rewards.map(rwd => {
-              return (
-                <li key={rwd.id}>
-                  {rwd.condition} {rwd.item.name} {rwd.item.rarity} {rwd.item.carryLimit} {rwd.item.value} <br /> 
-                </li>
-              )
-            }) : ''}
-=======
               {rewards && rewards.length > 0
                 ? rewards.map(rwd => {
                     return (
@@ -219,14 +210,12 @@ const Details = props => {
                     )
                   })
                 : ''}
->>>>>>> 3ad57a146656f3153b27592865dd34112ea89ac9
             </ul>
           </MonsterDetailElement>
         </MonsterDetails>
         <MonsterDetailElement>
           <MonsterDetailHeading>Weaknesses</MonsterDetailHeading>
           <ul>
-<<<<<<< HEAD
           {(weaknesses && weaknesses.length > 0) ? weaknesses
           .sort((a, b) => (a.stars > b.stars) ? -1 : 1)
           .map(weak => {
@@ -236,19 +225,6 @@ const Details = props => {
               </li>
             )
           }) : ''}
-=======
-            {weaknesses && weaknesses.length > 0
-              ? weaknesses
-                  .sort((a, b) => (a.stars > b.stars ? -1 : 1))
-                  .map(weak => {
-                    return (
-                      <li key={weak.element}>
-                        {weak.element} {'⭐'.repeat(weak.stars)}
-                      </li>
-                    )
-                  })
-              : ''}
->>>>>>> 3ad57a146656f3153b27592865dd34112ea89ac9
           </ul>
         </MonsterDetailElement>
       </WeaknessDescriptionWrapper>
