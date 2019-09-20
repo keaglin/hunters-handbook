@@ -1,16 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { breakpoint } from '../breakpoints'
+import { breakpoint } from '../lib/breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
-
-function findByName(name) {
-  if (name.includes('%20')) {
-    name = name.replace('%20', ' ')
-  }
-  const db = dbModule.default
-  const found = db.find(monster => monster.name === name)
-  return found
-}
 
 const detailScrollbarStyles = `
 ::-webkit-scrollbar-track {
@@ -99,7 +90,6 @@ const TitleWrapper = styled.div`
   align-items: center;
   p {
     margin: 0;
-
   }
 `
 
@@ -107,6 +97,7 @@ const WeaknessDescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 `
+
 const MonsterDetails = styled.div`
   display: flex;
   flex-flow: column wrap;
@@ -126,10 +117,14 @@ const MonsterDetailHeading = styled.h3`
   margin-bottom: 1rem;
 `
 
+const findByName = (monsterName) => {
+  const db = dbModule.default
+  const found = db.find(monster => monsterName === monster.name) 
+  return found
+}
+
 const Details = props => {
-  console.log('props', props)
-  const monster = findByName(props.name)
-  console.log(monster)
+  
   const {
     name,
     description,
@@ -141,10 +136,8 @@ const Details = props => {
     type,
     species,
     rewards
-  } = monster
+  } = findByName(props.monsterName)
 
-
-  // TODO clean this up -- see notes
   return (
     <DetailWrapper>
       <TitleWrapper>
@@ -163,60 +156,60 @@ const Details = props => {
           <MonsterDetailElement>
             <MonsterDetailHeading>Locations</MonsterDetailHeading>
             <ul>
-            {(locations && locations.length > 0) ? locations.map(loc => {
-              return (
-                <li key={loc.id}>{loc.name}</li>
-              )
-            }) : ''}
+              {locations && locations.length > 0
+                ? locations.map(loc => {
+                    return <li key={loc.id}>{loc.name}</li>
+                  })
+                : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Resistances</MonsterDetailHeading>
             <ul>
-            {(resistances && resistances.length > 0) ? resistances.map(res => {
-              return (
-                <li key={res.element}>
-                  {res.element} {res.condition && `when ${res.condition}`}
-                </li>
-              )
-            }) : ''}
+              {resistances && resistances.length > 0
+                ? resistances.map(res => {
+                    return (
+                      <li key={res.element}>
+                        {res.element} {res.condition && `when ${res.condition}`}
+                      </li>
+                    )
+                  })
+                : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Elements</MonsterDetailHeading>
             <ul>
-            {(elements && elements.length > 0) ? elements.map(el => {
-              return (
-                <li key={el}>
-                  {el}
-                </li>
-              )
-            }) : ''}
-          </ul>
+              {elements && elements.length > 0
+                ? elements.map(el => {
+                    return <li key={el}>{el}</li>
+                  })
+                : ''}
+            </ul>
           </MonsterDetailElement>
 
           <MonsterDetailElement>
             <MonsterDetailHeading>Ailments</MonsterDetailHeading>
             <ul>
-            {(ailments && ailments.length > 0) ? ailments.map(ail => {
-              return (
-                <li key={ail.id}>
-                  {ail.name}
-                </li>
-                )
-              }) : ''}
+              {ailments && ailments.length > 0
+                ? ailments.map(ail => {
+                    return <li key={ail.id}>{ail.name}</li>
+                  })
+                : ''}
             </ul>
           </MonsterDetailElement>
           <MonsterDetailElement>
             <MonsterDetailHeading>Rewards</MonsterDetailHeading>
             <ul>
-            {(rewards && rewards.length > 0) ? rewards.map(rwd => {
-              return (
-                <li key={weak.element}>
-                  {weak.element} {'⭐'.repeat(weak.stars)}
-                </li>
-              )
-            }) : ''}
+              {rewards && rewards.length > 0
+                ? rewards.map(rwd => {
+                    return (
+                      <li key={weaknesses.element}>
+                        {weaknesses.element} {'⭐'.repeat(weaknesses.stars)}
+                      </li>
+                    )
+                  })
+                : ''}
             </ul>
           </MonsterDetailElement>
         </MonsterDetails>
@@ -232,12 +225,12 @@ const Details = props => {
               </li>
             )
           }) : ''}
-          </ul>          
+          </ul>
         </MonsterDetailElement>
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={() => <Search />}>Back</button>
+        <button onClick={props.toggleSearch}>Back</button>
       </div>
     </DetailWrapper>
   )
