@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useState } from 'react'
-=======
 import React from 'react'
->>>>>>> 3ad57a146656f3153b27592865dd34112ea89ac9
 import styled from 'styled-components'
 import { breakpoint } from '../lib/breakpoints'
 import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
