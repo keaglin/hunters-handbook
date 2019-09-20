@@ -3,12 +3,11 @@ import Details from './Details'
 import styled from 'styled-components'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch } from 'react-instantsearch-dom'
-import {
-  HitItemWrapper,
-  SearchWrapper,
-  HitList,
-  SearchInput
-} from '../styles.js'
+import {  HitItemWrapper,
+          SearchWrapper,
+          HitList,
+          SearchInput
+        } from '../styles.js'
 
 const TempWrapper = styled.div`
   height: 100vh;

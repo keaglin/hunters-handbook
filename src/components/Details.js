@@ -117,14 +117,14 @@ const MonsterDetailHeading = styled.h3`
   margin-bottom: 1rem;
 `
 
-const findByName = (monsterName) => {
+const findByName = monsterName => {
   const db = dbModule.default
   const found = db.find(monster => monsterName === monster.name) 
   return found
 }
 
 const Details = props => {
-  
+
   const {
     name,
     description,
@@ -204,8 +204,8 @@ const Details = props => {
               {rewards && rewards.length > 0
                 ? rewards.map(rwd => {
                     return (
-                      <li key={weaknesses.element}>
-                        {weaknesses.element} {'⭐'.repeat(weaknesses.stars)}
+                      <li key={rwd.id}> 
+                        {rwd.condition} {rwd.item.name} {rwd.item.rarity} {rwd.item.carryLimit} {rwd.item.value}
                       </li>
                     )
                   })
