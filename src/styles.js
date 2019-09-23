@@ -104,12 +104,30 @@ overflow: hidden;
 `;
 
 export const HandBookWrapper = styled.div`
-  border: solid 2px black;
   height: 60px;
   width: 60px;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
 `;
 
 export const HandBook = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
+  :hover {
+    opacity: 1;
+    animation: flash 1.5s;
+  }
+  @keyframes flash {
+    0% {
+      border-radius: 10px;
+      box-shadow: -5px 5px 10px rgba(105, 181, 100, 1);
+      transform: rotate(3deg);
+    }
+    20% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
