@@ -69,8 +69,8 @@ const App = () => {
       opacity: 0,
       transform: 'translate3d(0px,0px,0)'
     },
-    enter: { opacity: 1 },
-    leave: { opacity: 0, transform: 'translate3d(-100px,0px,0)' }
+    enter: { opacity: 1, transform: 'translate3d(30px,0px,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50px,0px,0)' }
   })
 
   const Hit = ({ hit }) => (
