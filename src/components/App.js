@@ -10,6 +10,7 @@ import {
   HitList,
   SearchInput
 } from '../styles.js';
+import { useTransition, animated } from 'react-spring';
 
 const TempWrapper = styled.div`
   height: 100vh;
@@ -31,6 +32,7 @@ const searchClient = algoliasearch(
 const App = () => {
   const [toggleDetails, setToggleDetails] = useState(false);
   const [currentMonsterName, setMonsterName] = useState('');
+  const [isHovering, setIsHovering] = useState(false);
   const [toggleEntryIcon, setToggleEntryIcon] = useState(true);
 
   const toggleSearch = () => {
@@ -46,6 +48,20 @@ const App = () => {
     setToggleEntryIcon(!toggleEntryIcon);
     console.log(toggleEntryIcon);
   };
+
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseExit = () => {
+    setIsHovering(false);
+  };
+
+  const transitions = useTransition(isHovering, null, {
+    from: { position: 'absolute', opacity: 0 },
+    enter: { opacity: 1 },
+    leave: { opacity: 0 }
+  });
 
   const Hit = ({ hit }) => (
     <HitItemWrapper onClick={() => handleMonsterClick(hit.name)} tabIndex="0">
@@ -63,7 +79,7 @@ const App = () => {
           submit={
             <img
               src="/img/transparent-arrow.svg"
-              class="submit-search"
+              className="submit-search"
               alt="search monster list"
             />
           }
@@ -78,14 +94,22 @@ const App = () => {
   ) : (
     Search
   );
+  const AnimatedHandBook = transitions.map(
+    ({ item, key, props }) =>
+      item && (
+        <animated.div key={key} style={props}>
+          {toggleEntryIcon ? (
+            <HandBookIcon handleClick={handleIconClick} />
+          ) : (
+            renderSearch
+          )}
+        </animated.div>
+      )
+  );
 
   return (
-    <TempWrapper>
-      {toggleEntryIcon ? (
-        <HandBookIcon handleClick={handleIconClick} />
-      ) : (
-        renderSearch
-      )}
+    <TempWrapper onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit}>
+      {AnimatedHandBook}
     </TempWrapper>
   );
 };
