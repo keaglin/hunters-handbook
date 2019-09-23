@@ -103,6 +103,20 @@ margin-left: 50px;
 overflow: hidden;
 `
 
+export const CloseBox = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  top: -50px;
+  border: solid black 10px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  color: #fff;
+`
+
 export const HandBookWrapper = styled.div`
   height: 60px;
   width: 60px;
