@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { SearchBox, Hits } from 'react-instantsearch-dom';
+import styled from 'styled-components'
+import { SearchBox, Hits } from 'react-instantsearch-dom'
 
 // TODO: fonts
 
@@ -45,7 +45,7 @@ export const SearchInput = styled(SearchBox)`
   li:focus {
     box-shadow: 1px 0px 0px 3px #2e5d34;
   }
-`;
+`
 
 export const HitItemWrapper = styled.div`
   display: flex;
@@ -61,7 +61,7 @@ export const HitItemWrapper = styled.div`
     border-top: solid 1px rgba(105, 181, 100, 1);
     border-bottom: solid 1px rgba(105, 181, 100, 1);
   }
-`;
+`
 
 export const HitList = styled(Hits)`
   color: #fafafa;
@@ -88,7 +88,7 @@ export const HitList = styled(Hits)`
     color: inherit;
     text-decoration: none;
   }
-`;
+`
 
 export const SearchWrapper = styled.div`
 display: flex;
@@ -101,33 +101,41 @@ background: rgba(0, 0, 0);
 opacity: 0.9;
 margin-left: 50px;
 overflow: hidden;
-`;
+`
 
 export const HandBookWrapper = styled.div`
   height: 60px;
   width: 60px;
+  border-radius: 10px;
   margin-top: 2.5rem;
   margin-left: 1rem;
-`;
+`
 
 export const HandBook = styled.img`
   height: 70px;
   width: 70px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 6px #000;
+
   :hover {
     opacity: 1;
-    animation: flash 1.5s;
+    animation: glow 1.5s;
   }
-  @keyframes flash {
+  @keyframes glow {
     0% {
-      border-radius: 10px;
-      box-shadow: -5px 5px 10px rgba(105, 181, 100, 1);
       transform: rotate(3deg);
     }
     20% {
+      box-shadow: -10px 10px 17px rgba(105, 181, 100, 0.8);
+      background: linear-gradient(
+        221deg,
+        rgba(20, 255, 0, 0.01) 72%,
+        rgba(105, 181, 100, 1) 97%
+      );
       transform: rotate(-3deg);
     }
     100% {
       opacity: 1;
     }
   }
-`;
+`
