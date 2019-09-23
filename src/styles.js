@@ -126,12 +126,7 @@ export const HandBook = styled.img`
       transform: rotate(3deg);
     }
     20% {
-      box-shadow: -10px 10px 17px rgba(105, 181, 100, 0.8);
-      background: linear-gradient(
-        221deg,
-        rgba(20, 255, 0, 0.01) 72%,
-        rgba(105, 181, 100, 1) 97%
-      );
+      box-shadow: -5px 5px 5px rgba(105, 181, 100, 0.8);
       transform: rotate(-3deg);
     }
     100% {
