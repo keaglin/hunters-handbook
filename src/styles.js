@@ -110,9 +110,12 @@ export const CloseBox = styled.div`
   align-items: center;
   left: 20px;
   top: -50px;
-  border: solid black 10px;
-  height: 44px;
-  width: 44px;
+  border: solid black 3px;
+  font-size: 1.5 rem;
+  user-select: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   color: #fff;
 `
