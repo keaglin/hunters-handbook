@@ -4,90 +4,90 @@ import { SearchBox, Hits } from 'react-instantsearch-dom'
 // TODO: fonts
 
 export const SearchInput = styled(SearchBox)`
-width: 800px;
-button {
-  border: none;
-  background: rgba(0, 0, 0);
-  opacity: 0.9;
-}
-form {
-  display: flex;
-  background: url('/img/searchoutline.png') no-repeat center 0,
-    url('/img/searchoutline-bottom.png') no-repeat center bottom;
-  margin-bottom: 5px;
-  width: 624px;
-  justify-content: center;
-  align-items: center;
-}
+  width: 800px;
+  button {
+    border: none;
+    background: rgba(0, 0, 0);
+    opacity: 0.9;
+  }
+  form {
+    display: flex;
+    background: url('/img/searchoutline.png') no-repeat center 0,
+      url('/img/searchoutline-bottom.png') no-repeat center bottom;
+    margin-bottom: 5px;
+    width: 624px;
+    justify-content: center;
+    align-items: center;
+  }
 
-input:focus {
-  outline: none;
-}
-input {
-  border: none;
-  color: white;
-  font-size: 1.7rem;
-  padding: 15px 10px 10px 0px;
-  margin: 5px;
-  height: 40px;
-  width: 404px;
-  background: rgba(0, 0, 0);
-  opacity: 0.9;
-}
-.submit-search {
-  height: 30px;
-  width: 30px;
-}
+  input:focus {
+    outline: none;
+  }
+  input {
+    border: none;
+    color: white;
+    font-size: 1.7rem;
+    padding: 15px 10px 10px 0px;
+    margin: 5px;
+    height: 40px;
+    width: 404px;
+    background: rgba(0, 0, 0);
+    opacity: 0.9;
+  }
+  .submit-search {
+    height: 30px;
+    width: 30px;
+  }
 
-input:hover {
-}
+  input:hover {
+  }
 
-li:focus {
-  box-shadow: 1px 0px 0px 3px #2e5d34;
-}
+  li:focus {
+    box-shadow: 1px 0px 0px 3px #2e5d34;
+  }
 `
 
 export const HitItemWrapper = styled.div`
-display: flex;
-align-items: center;
-height: 45px;
+  display: flex;
+  align-items: center;
+  height: 45px;
 
-width: 615px;
-border-top: dashed 1px slategrey;
-:focus {
-  outline: none;
-}
-:hover {
-  border-top: solid 1px rgba(105, 181, 100, 1);
-  border-bottom: solid 1px rgba(105, 181, 100, 1);
-}
+  width: 615px;
+  border-top: dashed 1px slategrey;
+  :focus {
+    outline: none;
+  }
+  :hover {
+    border-top: solid 1px rgba(105, 181, 100, 1);
+    border-bottom: solid 1px rgba(105, 181, 100, 1);
+  }
 `
 
 export const HitList = styled(Hits)`
-color: #fafafa;
-margin-left: 5px;
-ul {
-  margin: 0px;
-  padding-left: 0px;
-}
+  color: #fafafa;
+  margin-left: 5px;
+  ul {
+    margin: 0px;
+    padding-left: 0px;
+  }
 
-li {
-  list-style: none;
-  text-shadow: 0 -1px 0 #fff;
-}
-li:hover {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(105, 181, 100, 1) 30%,
-    rgba(0, 0, 0, 0.6) 90%
-  );
-  outline: none;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  li {
+    list-style: none;
+    text-shadow: 0 -1px 0 #fff;
+  }
+  li:hover {
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(105, 181, 100, 1) 30%,
+      rgba(0, 0, 0, 0.6) 90%
+    );
+    outline: none;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `
 
 export const SearchWrapper = styled.div`
@@ -101,4 +101,53 @@ background: rgba(0, 0, 0);
 opacity: 0.9;
 margin-left: 50px;
 overflow: hidden;
+`
+
+export const CloseBox = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20px;
+  top: -50px;
+  border: solid black 3px;
+  font-size: 1.5 rem;
+  user-select: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #fff;
+`
+
+export const HandBookWrapper = styled.div`
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+`
+
+export const HandBook = styled.img`
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 6px #000;
+
+  :hover {
+    opacity: 1;
+    animation: glow 1.5s;
+  }
+  @keyframes glow {
+    0% {
+      transform: rotate(3deg);
+    }
+    20% {
+      box-shadow: -5px 5px 5px rgba(105, 181, 100, 0.8);
+      transform: rotate(-3deg);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `
