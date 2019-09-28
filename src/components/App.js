@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Details from './Details'
 import styled from 'styled-components'
 import algoliasearch from 'algoliasearch/lite'
@@ -36,6 +36,14 @@ const App = () => {
   const [isHovering, setIsHovering] = useState(false)
   const [toggleEntryIcon, setToggleEntryIcon] = useState(true)
   const [isSearching, setIsSearching] = useState(false)
+
+  useEffect(() => {
+    if (window.innerHeight > 450) {
+      console.log('mobile-mode')
+      setToggleEntryIcon(true)
+      setIsHovering(true)
+    }
+  }, [])
 
   const toggleSearch = () => {
     setToggleDetails(!toggleDetails)
