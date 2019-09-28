@@ -11,6 +11,7 @@ import {
   SearchInput,
   CloseBox
 } from '../styles.js'
+import { isMobile } from 'react-device-detect'
 import { useTransition, useSpring, animated } from 'react-spring'
 
 const TempWrapper = styled.div`
@@ -38,10 +39,12 @@ const App = () => {
   const [isSearching, setIsSearching] = useState(false)
 
   useEffect(() => {
-    if (window.innerHeight > 450) {
+    if (isMobile) {
       console.log('mobile-mode')
       setToggleEntryIcon(true)
       setIsHovering(true)
+    } else {
+      console.log(window.innerWidth, window.innerHeight)
     }
   }, [])
 

@@ -5,7 +5,10 @@ const size = {
   tablet: '768px',
   laptop: '1024px',
   laptopL: '1440px',
-  desktop: '2560px'
+  desktop: '2560px',
+  lsMobileS: '640px',
+  lsMobileM: '820px',
+  lsTablet: '1536px'
 }
 
 export const breakpoint = {
@@ -16,5 +19,8 @@ export const breakpoint = {
   laptop: `(min-width: ${size.laptop})`,
   laptopL: `(min-width: ${size.laptopL})`,
   desktop: `(min-width: ${size.desktop})`,
-  desktopL: `(min-width: ${size.desktop})`
+  desktopL: `(min-width: ${size.desktop})`,
+  lsMobileS: `(min-height: ${size.lsMobileS})`,
+  lsMobileM: `(min-height: ${size.lsMobileM})`,
+  lsTablet: `(min-height: ${size.lsTablet})`
 }
