@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { SearchBox, Hits } from 'react-instantsearch-dom'
-
+import { breakpoint } from './lib/breakpoints'
 // TODO: fonts
 
 export const SearchInput = styled(SearchBox)`
@@ -94,13 +94,20 @@ export const SearchWrapper = styled.div`
 display: flex;
 height: 400px;
 width: 640px
-border: 3px grey solid;
+border: 1px grey solid;
 border-radius: 10px;
 padding: 10px;
 background: rgba(0, 0, 0);
 opacity: 0.9;
 margin-left: 50px;
 overflow: hidden;
+@media ${breakpoint.tablet} {
+  padding: 0;
+  margin: 0;
+  width: 350px;
+  height: 100%;
+} 
+
 `
 
 export const CloseBox = styled.div`
@@ -150,4 +157,122 @@ export const HandBook = styled.img`
       opacity: 1;
     }
   }
+`
+/* 
+----- Details styles ------
+*/
+
+const detailScrollbarStyles = `
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #04b53c;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2) 15%,
+    transparent 25%,
+    transparent 10%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 25%,
+    transparent
+  );
+}`
+
+export const DetailWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 1rem;
+  max-height: 600px;
+  max-width: 630px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow-y: auto;
+  outline: 3px double #333;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  ${detailScrollbarStyles}
+`
+
+export const MonsterName = styled.h1`
+  color: #61efff;
+  text-transform: uppercase;
+  img {
+    height: 20px;
+    padding-right: 5px;
+  }
+`
+export const MonsterDescription = styled.div`
+  display: inline;
+  padding-right: 3rem;
+  width: 500px;
+  @media ${breakpoint.tablet} {
+    display: none;
+    padding-top: 0.5rem;
+    align-items: center;
+  }
+`
+
+export const TitleWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+`
+
+export const WeaknessDescriptionWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const MonsterDetails = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+`
+
+export const MonsterDetailElement = styled.div`
+  max-width: 220px;
+  padding-top: 1rem;
+`
+
+export const MonsterDetailHeading = styled.h3`
+  border-bottom: 1px dashed grey;
+  color: #61efff;
+  padding-bottom: 3px;
+  margin: 0;
+  margin-bottom: 1rem;
+`
+/* 
+----- Main Wrapper styles ------
+*/
+export const TempWrapper = styled.div`
+  height: 100vh;
+  width: 100%;
+  padding-top: 5rem;
+  padding-right: 7rem;
+  padding-bottom: 5rem;
+  /*background-image: url('/img/samplescreen.png');*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 `
