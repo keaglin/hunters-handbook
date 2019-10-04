@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Details from './Details'
-import styled from 'styled-components'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch } from 'react-instantsearch-dom'
 import HandBookIcon from './HandBookIcon'
@@ -9,21 +8,11 @@ import {
   SearchWrapper,
   HitList,
   SearchInput,
-  CloseBox
+  CloseBox,
+  TempWrapper
 } from '../styles.js'
-import { useTransition, useSpring, animated } from 'react-spring'
-
-const TempWrapper = styled.div`
-  height: 100vh;
-  width: 100%;
-  padding-top: 5rem;
-  padding-right: 7rem;
-  padding-bottom: 5rem;
-  background-image: url('/img/samplescreen.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-`
+import { isMobile } from 'react-device-detect'
+import { useTransition, animated } from 'react-spring'
 
 const searchClient = algoliasearch(
   'MT2HPEHTBE',
@@ -36,6 +25,16 @@ const App = () => {
   const [isHovering, setIsHovering] = useState(false)
   const [toggleEntryIcon, setToggleEntryIcon] = useState(true)
   const [isSearching, setIsSearching] = useState(false)
+
+  useEffect(() => {
+    if (isMobile) {
+      console.log('mobile-mode')
+      setToggleEntryIcon(true)
+      setIsHovering(true)
+    } else {
+      console.log(window.innerWidth, window.innerHeight)
+    }
+  }, [])
 
   const toggleSearch = () => {
     setToggleDetails(!toggleDetails)
