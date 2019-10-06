@@ -6,7 +6,10 @@
     "species" : "herbivore",
     "description" : "Docile herbivores that graze in packs. Their meat is considered a delicacy and is rich in nutrients. If one member of the herd is attacked, the rest will flee immediately.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -65,7 +68,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 2,
@@ -74,7 +81,10 @@
     "species" : "fanged wyvern",
     "description" : "Members of the Great Jagras pack, these smaller monsters will flee upon seeing one of their own perish. They're also known for ambushing larger monsters at a moment's notice.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -95,7 +105,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 3,
@@ -104,7 +118,10 @@
     "species" : "wingdrake",
     "description" : "Wingdrakes that feast on scatternuts. The flock will travel great distances when startled, making them an invaluable mode of transportation for clever hunters.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -140,7 +157,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 4,
@@ -149,7 +170,8 @@
     "species" : "neopteron",
     "description" : "Insects that paralyze their targets with their long stingers. They break easily, so attack them with poison or slinger ammo if you want to carve them.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 7,
         "name" : "Paralysis",
@@ -170,6 +192,8 @@
         }
       }
     ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -210,7 +234,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 5,
@@ -219,7 +247,10 @@
     "species" : "herbivore",
     "description" : "Mosswine are known for their excellent sense of smell, and are often found foraging for fungi. If you're hunting for mushrooms, follow the Mosswine to the motherlode.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -260,7 +291,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 6,
@@ -269,7 +304,10 @@
     "species" : "herbivore",
     "description" : "Herbivores that inhabit the Wildspire Waste. They've developed particularly hard hide to ward off attackers, and are known to gather in groups to defend themselves.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -318,7 +356,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 7,
@@ -327,7 +369,10 @@
     "species" : "herbivore",
     "description" : "Female Kestodon will alert the pack of danger, while the males will violently charge would-be threats. Their rushing charges can be blocked, however, leaving them open to attacks.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -353,7 +398,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 8,
@@ -362,7 +411,10 @@
     "species" : "wingdrake",
     "description" : "Wingdrakes that produce a sound similar to screamer pods when startled. Use meat to get their attention, and then hunt them for materials, or use them for transportation.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -388,7 +440,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 9,
@@ -397,7 +453,10 @@
     "species" : "fish",
     "description" : "Vicious piscine that form groups to defend their territory from intruders. Be sure not to venture too closely to their habitat!",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -423,7 +482,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 10,
@@ -432,7 +495,10 @@
     "species" : "herbivore",
     "description" : "Small herbivores known for their gentle demeanor and the medicinal properties of their horns. Those wishing to harvest a horn should aim for the head when attacking them.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -468,7 +534,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 11,
@@ -477,7 +547,10 @@
     "species" : "wingdrake",
     "description" : "Wingdrakes inhabiting the Coral Highlands. They group up to steal the eggs of other animals, but this in turn exposes them to the attention of larger, more vicious predators.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -498,7 +571,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 12,
@@ -507,7 +584,10 @@
     "species" : "fanged wyvern",
     "description" : "Small nocturnal monsters. They're particularly vulnerable to Tzitzi-Ya-Ku's blinding flash, but have been known to gang up on enemies.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -528,7 +608,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 13,
@@ -537,7 +621,8 @@
     "species" : "fanged wyvern",
     "description" : "Monsters known to attack in packs, using the deadly vapor of the Rotten Vale to their advantage. They're known for crippling targets with paralyzing fangs.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 7,
         "name" : "Paralysis",
@@ -558,6 +643,8 @@
         }
       }
     ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 4,
@@ -573,7 +660,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 14,
@@ -582,7 +673,10 @@
     "species" : "neopteron",
     "description" : "Small insects that are found primarily on land. They're highly territorial and will attack anything that approaches them. Gather their materials by attacking them with the slinger.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 4,
@@ -603,7 +697,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 15,
@@ -612,7 +710,10 @@
     "species" : "herbivore",
     "description" : "Pack monsters that inhabit the Elder's Recess. They are easily angered by intruders, and will charge at monsters twice their size.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -628,7 +729,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 16,
@@ -637,7 +742,8 @@
     "species" : "wingdrake",
     "description" : "Fervid wingdrakes that have flourished under harsh living conditions. They target intruders with a unique acidic agent, and then attack as a swarm.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 14,
         "name" : "Defense Down",
@@ -669,6 +775,8 @@
         }
       }
     ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -842,7 +950,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 17,
@@ -851,7 +963,10 @@
     "species" : "fanged wyvern",
     "description" : "The pack leader of the Jagras. When hungry, Great Jagras are known to attack monsters even stronger than themselves. It balloons to unbelievable proportions after swallowing prey.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -912,7 +1027,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/9e/Jagras9.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/91/MHW-Great_Jagras_Render_001_copy.jpg"
   },
   {
     "id" : 18,
@@ -921,7 +1040,10 @@
     "species" : "bird wyvern",
     "description" : "An odd bird wyvern that has developed limbs capable of carrying weapons. It's been spotted stealing eggs from nests found in the Ancient Forest and Wildspire Waste.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -987,7 +1109,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/90/Kulu-Ya-Ku12.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c1/Kulu.jpg"
   },
   {
     "id" : 19,
@@ -996,7 +1122,8 @@
     "species" : "bird wyvern",
     "description" : "A bird wyvern known to possess poisonous toxins in its body. It's been spotted storing scatternuts in its mouth or tail, coating them with poison and spitting them out at threats.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 8,
         "name" : "Poison",
@@ -1053,6 +1180,8 @@
         }
       }
     ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -1118,7 +1247,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a8/Pukei-Pukei20.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/6/6a/MHW-Pukei-Pukei_Render_001_copy.jpg"
   },
   {
     "id" : 20,
@@ -1127,7 +1260,8 @@
     "species" : "brute wyvern",
     "description" : "Barroth seek out ants, their favorite snack, and mark their territory with mud. They attack potential rivals with their devastating charging attack.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 12,
         "name" : "Waterblight",
@@ -1164,6 +1298,8 @@
         }
       }
     ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -1990,7 +2126,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/9b/Barroth3.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/76/MHW-Barroth_Render_001_copy.jpg"
   },
   {
     "id" : 23,
@@ -1998,10 +2138,9 @@
     "type" : "large",
     "species" : "brute wyvern",
     "description" : "The Anjanath patrols the Ancient Forest, looking for its favorite meal, Aptonoth. This belligerent monster will attack anything without hesitation.",
-    "elements" : [
-      "fire"
-    ],
-    "ailments" : [
+    "elements" : ["fire"],
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -2026,7 +2165,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []  
+    },
     "locations" : [
       {
         "id" : 1,
@@ -2931,7 +3072,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c5/Anjanath1.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/8c/MHW-Anjanath_Render_001_copy.jpg"
   },
   {
     "id" : 24,
@@ -2939,10 +3084,9 @@
     "type" : "large",
     "species" : "flying wyvern",
     "description" : "An azure-colored subspecies of Rathalos. More mobile than their standard cousins, they locate prey from the air and quickly swoop in for the kill.",
-    "elements" : [
-      "fire"
-    ],
-    "ailments" : [
+    "elements" : ["fire"],
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -3003,7 +3147,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -3577,7 +3723,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e1/AzureRathalos2.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/db/Azurerath.jpg"
   },
   {
     "id" : 25,
@@ -3588,7 +3738,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 1,
         "name" : "Blastblight",
@@ -3634,7 +3785,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+    "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -4176,7 +4329,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/22/Bazelgeuse.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/cb/Bazelrender.jpg"
   },
   {
     "id" : 26,
@@ -4188,7 +4345,8 @@
       "fire",
       "thunder"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 2,
         "name" : "Bleeding",
@@ -4281,7 +4439,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -4342,7 +4502,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d2/Djm-H9yX4AAKPNj.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/44/MHW-Behemoth_Render_001.jpg"
   },
   {
     "id" : 27,
@@ -4353,7 +4517,8 @@
     "elements" : [
       "dragon"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 3,
         "name" : "Dragonblight",
@@ -4406,7 +4571,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -4507,7 +4674,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e4/Djm-AFBWsAAzchr.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/25/Jho.jpg"
   },
   {
     "id" : 28,
@@ -4516,7 +4687,8 @@
     "species" : "flying wyvern",
     "description" : "The apex monster of the Wildspire Waste.\nA menacing, territorial beast that lurks underground.\nLoud noises will cause it to lunge out of the sand in search of prey.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 10,
         "name" : "Stun",
@@ -4536,7 +4708,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -5333,7 +5507,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/56/Diablos6.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b9/MH4U-Diablos_Render_001_copy.jpg"
   },
   {
     "id" : 29,
@@ -5342,7 +5520,10 @@
     "species" : "flying wyvern",
     "description" : "These black-shelled Diablos are actually female Diablos in heat. The color signals their aggressiveness and heightened hostility to other creatures in their habitat.",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -5881,7 +6062,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/04/Black_Diablos5.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/6/6c/BlackDiablos.jpg"
   },
   {
     "id" : 30,
@@ -5892,7 +6077,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 1,
         "name" : "Blastblight",
@@ -5914,7 +6100,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -5975,7 +6163,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/f/f4/Dodogama_1_7.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/5d/Dodogamarender.jpg"
   },
   {
     "id" : 31,
@@ -5984,7 +6176,8 @@
     "species" : "fanged wyvern",
     "description" : "A monster that scavenges for meals dropped from the Coral Highlands.\nIt acts as the alpha leader of a Girros pack, and sports giant fangs that paralyze its prey.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 7,
         "name" : "Paralysis",
@@ -6004,7 +6197,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 4,
@@ -6065,7 +6260,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/08/Great_Girros8.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/ba/MHW-Great_Girros_Render_001_copy.jpg"
   },
   {
     "id" : 32,
@@ -6076,7 +6275,8 @@
     "elements" : [
       "thunder"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used" :[
       {
         "id" : 7,
         "name" : "Paralysis",
@@ -6120,7 +6320,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -6799,7 +7001,11 @@
           }
         ]
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/ee/Kirin11.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3e/TW5JMWHeJoy7LcexxUbhuetOP1rew3godOrn5HR0-BE.jpg"
   },
   {
     "id" : 33,
@@ -6810,7 +7016,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -6835,7 +7042,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 9,
@@ -6914,7 +7123,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/cb/Djm-EXPX4AcK9S-.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/da/KulveTarroth.jpg"
   },
   {
     "id" : 34,
@@ -6923,7 +7136,8 @@
     "species" : "elder dragon",
     "description" : "An elder dragon that shields itself with fierce winds, preventing anyone from approaching it. Its skin consists of hard, metallic scales.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 10,
         "name" : "Stun",
@@ -6943,7 +7157,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -7008,7 +7224,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e2/Kushala_Daora13.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/33/Kushala.jpg"
   },
   {
     "id" : 35,
@@ -7019,7 +7239,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -7044,7 +7265,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -7123,7 +7346,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/9d/Lavasioth14.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c8/Lava.jpg"
   },
   {
     "id" : 36,
@@ -7134,7 +7361,8 @@
     "elements" : [
       "ice"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 6,
         "name" : "Iceblight",
@@ -7157,7 +7385,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -7223,7 +7453,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/aa/Legiana15.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/06/MHW-Legiana_Render_001_copy.jpg"
   },
   {
     "id" : 37,
@@ -7234,7 +7468,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -7259,7 +7494,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -7320,7 +7557,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/7a/Djm-CSgW4AEFEO9.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/10/Lunastra.jpg"
   },
   {
     "id" : 38,
@@ -7395,7 +7636,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1d/Nergigante_16.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/27/MHW-Nergigante_Render_001_copy.jpg"
   },
   {
     "id" : 39,
@@ -7404,7 +7649,8 @@
     "species" : "fanged wyvern",
     "description" : "A terrifying monster that scours the Rotten Vale for carrion. Its highly aggressive nature means that anything, be it monster or man, is a potential meal.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 2,
         "name" : "Bleeding",
@@ -7449,7 +7695,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -7515,7 +7763,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/34/Odogaron17.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/10/MHW-Odogaron_Render_001_copy.jpg"
   },
   {
     "id" : 40,
@@ -7524,7 +7776,8 @@
     "species" : "flying wyvern",
     "description" : "Paolumu feast on eggs found in the Coral Highlands. They are able to propel through the air using unique sacs in their bodies, and attack with their extremely hard tails.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 13,
         "name" : "Wind Pressure",
@@ -7549,7 +7802,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -7610,7 +7865,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b4/Paolumu18.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/82/MHW-Paolumu_Render_001_copy.jpg"
   },
   {
     "id" : 41,
@@ -7619,7 +7878,8 @@
     "species" : "brute wyvern",
     "description" : "A gigantic brute wyvern that eats the bones of carcasses found in the Rotten Vale, using some of it as armor. It also rolls into a ball as a form of attack and transportation.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 9,
         "name" : "Sleep",
@@ -7648,7 +7908,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 4,
@@ -7709,7 +7971,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/15/Radobaan21.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/53/MHW-Radobaan_Render_001_copy.jpg"
   },
   {
     "id" : 42,
@@ -7720,7 +7986,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -7800,7 +8067,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -7861,7 +8130,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/9c/Rathalos22.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/51/MHW-Rathalos_Render_001_copy.jpg"
   },
   {
     "id" : 43,
@@ -7872,7 +8145,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -7933,7 +8207,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -7999,7 +8275,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/6/66/Rathian23.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c7/MH4-Rathian_Render_001_copy.jpg"
   },
   {
     "id" : 44,
@@ -8010,7 +8290,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -8071,7 +8352,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -8137,7 +8420,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/ee/Pink_Rathian19.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/12/Pinkrathian.jpg"
   },
   {
     "id" : 45,
@@ -8148,7 +8435,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 1,
         "name" : "Blastblight",
@@ -8194,7 +8482,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 3,
@@ -8260,7 +8550,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/cb/Teostra24.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/46/Teostra.jpg"
   },
   {
     "id" : 48,
@@ -8269,7 +8563,8 @@
     "species" : "bird wyvern",
     "description" : "This odd monster blinds both prey and enemies with a special pulsing organ near its head. It then uses its strong legs to deliver finishing blows.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 10,
         "name" : "Stun",
@@ -8289,7 +8584,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 2,
@@ -8350,7 +8647,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/82/Tzitzi-Ya-Ku26.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/44/MHW-Tzitzi-Ya-Ku_Render_001_copy.jpg"
   },
   {
     "id" : 49,
@@ -8361,7 +8662,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -8414,7 +8716,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 5,
@@ -8475,7 +8779,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/6/66/Uragaan27.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a5/Uragaan.jpg"
   },
   {
     "id" : 50,
@@ -8484,7 +8792,8 @@
     "species" : "elder dragon",
     "description" : "A grotesque Elder Dragon, that inhabits the deepest part of the Rotten Vale. It uses the fatal vapor of the vale in what appears to be a symbiotic relationship.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 4,
         "name" : "Effluvial Buildup",
@@ -8518,7 +8827,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 4,
@@ -8579,7 +8890,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b5/Vaal_Hazak28.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/54/MHW-Vaal_Hazak_Render_001.png"
   },
   {
     "id" : 51,
@@ -8590,7 +8905,8 @@
     "elements" : [
       "dragon"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 3,
         "name" : "Dragonblight",
@@ -8637,7 +8953,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 7,
@@ -8698,7 +9016,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b6/Djm-GB3WwAIu-db.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/45/Xeno.jpg"
   },
   {
     "id" : 52,
@@ -8709,7 +9031,8 @@
     "elements" : [
       "fire"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 5,
         "name" : "Fireblight",
@@ -8734,7 +9057,9 @@
           "items" : []
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 6,
@@ -8791,7 +9116,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3b/Zorah_Magdaros29.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a1/MHW-Zorah_Magdaros_Render_001_copy.jpg"
   },
   {
     "id" : 53,
@@ -8800,7 +9129,8 @@
     "species" : "relict",
     "description" : "Dwelling deep inside the forest, these creatures use their innate magic to control all flora and fauna within their territory.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used":[
       {
         "id" : 2,
         "name" : "Bleeding",
@@ -8845,7 +9175,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -8905,7 +9237,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 54,
@@ -8914,7 +9250,8 @@
     "species" : "relict",
     "description" : "An old leshen that arrived through a portal to assume control over the Ancient Forest. Sometimes revered as an indigenous deity.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 2,
         "name" : "Bleeding",
@@ -8959,7 +9296,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -9019,7 +9358,11 @@
         "condition" : null
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 55,
@@ -9028,7 +9371,8 @@
     "species" : "lynian",
     "description" : "The Gajalaka are aggressive towards large monsters and hunters, and will attack with status-afflicting weapons if threatened. The Gajalaka, if found and recruited in the Lynian Expert questline, will aid the hunters in their hunts. However, only certain ones will.",
     "elements" : [],
-    "ailments" : [
+    "ailments" : {
+      "used": [
       {
         "id" : 8,
         "name" : "Poison",
@@ -9102,7 +9446,9 @@
           ]
         }
       }
-    ],
+      ],
+      "weak": []
+    },
     "locations" : [
       {
         "id" : 1,
@@ -9132,7 +9478,12 @@
         "stars" : 0,
         "condition" : "null"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 56,
@@ -9141,7 +9492,10 @@
     "species" : "lynian",
     "description" : "Grimalkyne resembles bipedal lynxes. They have tufted ears, and come in a variety of colors depending on the tribe",
     "elements" : [],
-    "ailments" : [],
+    "ailments" : {
+      "used": [],
+      "weak": []
+    },
     "resistances" : [],
     "weaknesses" : [],
     "locations" : [
@@ -9162,7 +9516,11 @@
         "name" : "Rotten Vale"
       }
     ],
-    "rewards" : []
+    "rewards" : [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 57,
@@ -9175,7 +9533,9 @@
       "fire",
       "thunder"
     ],
-    "ailments" : [
+    "ailments" : {
+      "used": [],
+      "weak": [
       {
         "id" : 1,
         "name" : "Blastblight",
@@ -9299,7 +9659,7 @@
           "items" : []
         }
       }
-    ],
+    ]},
     "resistances" : [
       {
         "element" : "water",
@@ -9353,47 +9713,517 @@
         "name" : "Elder's Recess"
       }
     ],
-    "rewards" : []
+    "rewards" : [
+      {
+        "item": {
+          "name": "Banbaro Chine",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Banbaro Cortex",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Banbaro Great Horn",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Banbaro Lash",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": ["horns", "feet", "tail"],
+    "weakSpots": [
+      {
+        "part": "horns",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 1
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 1
+          }
+        ]
+      },
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "legs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/89/Banbaroicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/de/Banbaro.jpg"
   },
   {
     "id" : 58,
     "name" : "Beotodus",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "piscine wyvern",
+    "description": "You'll often find the Beotodus diving beneath the surface of the layer of powder that covers the Hoarfrost Reach.",
     "elements": [],
-    "ailments": [],
-    "resistances": [],
-    "weaknesses": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "blast",
+          "stars": 3
+        },
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
+    },
+    "resistances": ["ice", "dragon"],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
     ],
-    "rewards": []
+    "rewards": [
+      {
+        "item": {
+          "name": "Beotodus Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Beotodus Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Beotodus Hardhorn",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Beotodus Grandfin",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": ["head", "back", "legs", "tail"],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "legs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2,
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/8c/Beotodusicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/21/Beotodus.jpg"
   },
   {
     "id" : 59,
     "name" : "Viper Tobi-Kadachi",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "fanged wyvern",
+    "description": "Viper Tobi-Kadachi will attempt to poison and paralyze you with its venom and poisonous tail. Watch out!",
     "elements": [],
-    "ailments": [],
-    "resistances": [],
-    "weaknesses": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "poison",
+          "stars": 1
+        },
+        {
+          "name": "paralysis",
+          "stars": 1
+        }
+      ]
+    },
+    "resistances": ["water"],
+    "weaknesses": [
+      {
+        "element": "thunder",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
     ],
-    "rewards": []
+    "rewards": [
+      {
+        "item": {
+          "name": "Viper Tobi-Kadachi Thickfur",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Viper Tobi-Kadachi Membrane+",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Viper Tobi-Kadachi Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Viper Tobi-Kadachi Thorn",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Viper Tobi-Kadachi Hardclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Wyvern Gem",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+      
+    ],
+    "breaks": ["head", "back", "forelegs", "tail"],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "neck",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "forelegs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/8f/Viper_Tobi-Kadachiicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b6/Vipertobi.jpg"
   },
   {
     "id" : 60,
     "name" : "Nightshade Paolumu",
+    "type": "large",
+    "species": "flying wyvern",
+    "description": "Nightshade Paolumu is a subspecies of the well known Paolumu. Like it's normal cousin, it features large bat like wings and ears, and a large air sack in can fill to become buoyant.",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 1
+        }      
+      ]
+    },
+    "resistances": ["dragon"],
+    "weaknesses": [
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations" : [
       {
         "id" : 1,
@@ -9403,11 +10233,181 @@
         "id" : 2,
         "name" : "Wildspire Waste"
       }
-    ]
+    ],
+    "rewards" : [
+      {
+        "item": {
+          "name": "Nightshade Paolumu Thickfur",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nightshade Paolumu Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Paolumu Cortex",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nightshade Paolumu Fellwing",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": ["neck pouch", "back", "wings", "tail"],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "neck pouch",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "belly",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a5/Nightshade_Paolumuicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/5e/MHWI-Nightshade_Paolumu_Render_001_copy.jpg"
   },
   {
     "id" : 61,
     "name" : "Nargacuga",
+    "type": "large",
+    "species": "flying wyvern",
+    "description": "A Monster Hunter staple for veterans of the series, Nargacuga makes its return in Monster Hunter World: Iceborne. This strange combination of bat and cat uses lightning quick reflexes to prey on its opponents.",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
+    },
+    "resistances": ["water"],
+    "weaknesses": [
+      {
+        "element": "thunder",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations" : [
       {
         "id" : 1,
@@ -9417,21 +10417,314 @@
         "id" : 2,
         "name" : "Coral Highlands"
       }
-    ]
+    ],
+    "rewards": [
+      {
+        "item": {
+          "name": "Nargacuga Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nargacuga Blackfur+",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nargacuga Hardfang",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nargacuga Tailspear",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nargacuga Lash",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Nargacuga Mantle",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": ["head", "tail"],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "upper tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "lower tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/28/Nargacugaicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/ef/Nargacuga.jpg"
   },
   {
     "id" : 62,
     "name" : "Barioth",
+    "type": "large",
+    "species": "flying wyvern",
+    "description": "A returning monster from previous games, Barioth features large tusks and a forked tail it uses to slice at its opponents.",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
+    },
+    "resistances": ["water", "ice"],
+    "weaknesses": [
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ]
+    ],
+    "rewards": [
+      {
+        "item": {
+          "name": "Barioth Cortex ",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Barioth Thickfur",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Barioth Hardclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Barioth Greatspike",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Barioth Lash",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": ["head", "front claws", "tail (severable)"],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "wings",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 1
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 1
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 1
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/58/Bariothicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/ee/Barioth.jpg"
   },
   {
     "id" : 63,
     "name" : "Glavenus",
+    "type": "large",
+    "species": "flying wyvern",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
@@ -9445,81 +10738,200 @@
         "id" : 3,
         "name" : "Elder's Recess"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/32/Glavenusicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e1/Glavenus.jpg"
   },
   {
     "id" : 64,
     "name" : "Brachydios",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Elder's Recess"
       }
-    ]
+    ],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/Brachydiosicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b6/Brachyrender.jpg"
   },
   {
     "id" : 65,
     "name" : "Ebony Odogaron",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Coral Highlands"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/79/Ebony_Odogaronicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/55/EbonyOdogaron.jpg"
   },
   {
     "id" : 66,
     "name" : "Yian Garuga",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "More Hunting Required!"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/49/Yian_Garugaicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/42/EDJbBbIVUAIQwnP.jpg"
   },
   {
     "id" : 67,
     "name" : "Rajang",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "More Hunting Required!"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "",
+    "image": ""
   },
   {
     "id" : 68,
     "name" : "Coral Pukei-Pukei",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Coral Highlands"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1e/Coral_Pukei-Pukeiicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/30/CoralPukei.jpg"
   },
   {
     "id" : 69,
     "name" : "Velkhana",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c3/Velkhanaicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e7/Velkhana_Render.jpg"
   },
   {
     "id" : 70,
     "name" : "Shrieking Legiana",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/22/Shrieking_Legianaicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/ShriekingLegiana.jpg"
   },
   {
     "id" : 71,
     "name" : "Tigrex",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
@@ -9541,46 +10953,236 @@
         "id" : 5,
         "name" : "Hoarfrost Reach"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3a/Tigrexicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/ac/Tigrex.jpg"
   },
   {
     "id" : 72,
     "name" : "Acidic Glavenus",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "More Hunting Required!"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/80/Acidic_Glavenusicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/f/f2/AcidicGlavenus.jpg"
   },
   {
     "id" : 73,
     "name" : "Fulgur Anjanath",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Hoarfrost Reach"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/05/Fulgur_Anjanathicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/7a/FulgurAnjanath.jpg"
   },
   {
     "id" : 74,
     "name" : "Namielle",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "Coral Highlands"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a4/Namielleicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d9/EDJa-FTU4AA8Ce1-2.jpg"
   },
   {
     "id" : 75,
     "name" : "Zinogre",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
     "locations" : [
       {
         "id" : 1,
         "name" : "More Hunting Required!"
       }
-    ]
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1f/Zinogreicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d5/EDJbBdZU4AEAjve.jpg"
+  },
+  {
+    "id" : 76,
+    "name" : "Seething Bazelguese",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
+    "locations" : [
+      {
+        "id" : 1,
+        "name" : "More Hunting Required!"
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/52/Seething_Bazelgeuseicon.jpg",
+    "image": ""
+  },
+  {
+    "id" : 77,
+    "name" : "Blackveil Vaal Hazak",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
+    "locations" : [
+      {
+        "id" : 1,
+        "name" : "More Hunting Required!"
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/70/Blackveil_Vaal_Hazakicon.jpg",
+    "image": ""
+  },
+  {
+    "id" : 78,
+    "name" : "Savage Deviljho",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
+    "locations" : [
+      {
+        "id" : 1,
+        "name" : "More Hunting Required!"
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3b/Savage_Deviljhoicon.jpg",
+    "image": ""
+  },
+  {
+    "id" : 79,
+    "name" : "Ruiner Nergigante",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
+    "locations" : [
+      {
+        "id" : 1,
+        "name" : "More Hunting Required!"
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/f/f3/Ruiner_Nergiganteicon.jpg",
+    "image": ""
+  },
+  {
+    "id" : 80,
+    "name" : "Shara Ishvalda",
+    "type": "",
+    "species": "",
+    "description": "",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
+    "resistances": [],
+    "weaknesses": [],
+    "locations" : [
+      {
+        "id" : 1,
+        "name" : "More Hunting Required!"
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/4b/Shara_Ishvaldaicon.jpg",
+    "image": ""
   }
 ]
