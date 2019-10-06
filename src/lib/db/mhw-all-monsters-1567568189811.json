@@ -10715,11 +10715,14 @@
   {
     "id" : 63,
     "name" : "Glavenus",
-    "type": "",
-    "species": "",
+    "type": "large",
+    "species": "flying wyvern",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10740,7 +10743,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/32/Glavenusicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e1/Glavenus.jpg"
   },
   {
     "id" : 64,
@@ -10749,7 +10752,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10758,8 +10764,10 @@
         "name" : "Elder's Recess"
       }
     ],
+    "breaks": [],
+    "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/Brachydiosicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b6/Brachyrender.jpg"
   },
   {
     "id" : 65,
@@ -10768,7 +10776,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10781,7 +10792,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/79/Ebony_Odogaronicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/55/EbonyOdogaron.jpg"
   },
   {
     "id" : 66,
@@ -10790,7 +10801,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10803,7 +10817,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/49/Yian_Garugaicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/42/EDJbBbIVUAIQwnP.jpg"
   },
   {
     "id" : 67,
@@ -10812,7 +10826,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10834,7 +10851,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10847,7 +10867,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1e/Coral_Pukei-Pukeiicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/30/CoralPukei.jpg"
   },
   {
     "id" : 69,
@@ -10856,7 +10876,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10869,7 +10892,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c3/Velkhanaicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e7/Velkhana_Render.jpg"
   },
   {
     "id" : 70,
@@ -10878,7 +10901,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10891,7 +10917,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/22/Shrieking_Legianaicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/ShriekingLegiana.jpg"
   },
   {
     "id" : 71,
@@ -10900,7 +10926,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10929,7 +10958,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3a/Tigrexicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/ac/Tigrex.jpg"
   },
   {
     "id" : 72,
@@ -10938,7 +10967,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10951,7 +10983,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/80/Acidic_Glavenusicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/f/f2/AcidicGlavenus.jpg"
   },
   {
     "id" : 73,
@@ -10960,7 +10992,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10973,7 +11008,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/05/Fulgur_Anjanathicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/7a/FulgurAnjanath.jpg"
   },
   {
     "id" : 74,
@@ -10982,7 +11017,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -10995,7 +11033,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a4/Namielleicon.jpg",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d9/EDJa-FTU4AA8Ce1-2.jpg"
   },
   {
     "id" : 75,
@@ -11004,7 +11042,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -11016,8 +11057,8 @@
     "rewards": [],
     "breaks": [],
     "weakSpots": [],
-    "icon": "",
-    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1f/Zinogreicon.jpg"
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1f/Zinogreicon.jpg",
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d5/EDJbBdZU4AEAjve.jpg"
   },
   {
     "id" : 76,
@@ -11026,7 +11067,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -11048,7 +11092,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -11070,7 +11117,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -11092,7 +11142,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
@@ -11114,7 +11167,10 @@
     "species": "",
     "description": "",
     "elements": [],
-    "ailments": {},
+    "ailments": {
+      "used": [],
+      "weak": []
+    },
     "resistances": [],
     "weaknesses": [],
     "locations" : [
