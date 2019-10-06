@@ -7,6 +7,7 @@
     "aws-sdk": "^2.526.0",
     "hookrouter": "^1.2.3",
     "react": "^16.9.0",
+    "react-device-detect": "^1.9.10",
     "react-dom": "^16.9.0",
     "react-instantsearch-dom": "^5.7.0",
     "react-scripts": "3.1.1",
