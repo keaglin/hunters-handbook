@@ -9,6 +9,9 @@ import {
   MonsterDetailHeading,
   MonsterDescription
 } from '../styles'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import Loader from 'react-loader-spinner'
+import Img from 'react-image'
 import * as dbModule from '../lib/db/mhw-all-monsters.json'
 
 const findByName = monsterName => {
@@ -27,6 +30,7 @@ const Details = props => {
     resistances,
     weaknesses,
     type,
+    icon,
     species,
     rewards
   } = findByName(props.monsterName)
@@ -35,7 +39,14 @@ const Details = props => {
     <DetailWrapper>
       <TitleWrapper>
         <MonsterName>
-          <img src='./img/transparent-arrow.svg' alt='arrow' />
+          <Img
+            style={{ height: '60px', width: '60px', borderRadius: '50%' }}
+            src={icon}
+            loader={
+              <Loader type='Rings' color='#04b53c' height={60} width={60} />
+            }
+            alt='monster-icon'
+          />
           {name}
         </MonsterName>
         <div>
@@ -60,9 +71,9 @@ const Details = props => {
             <MonsterDetailHeading>Resistances</MonsterDetailHeading>
             <ul>
               {resistances && resistances.length > 0
-                ? resistances.map(res => {
+                ? resistances.map((res, index) => {
                     return (
-                      <li key={res.element}>
+                      <li key={index}>
                         {res.element} {res.condition && `when ${res.condition}`}
                       </li>
                     )

@@ -3,6 +3,42 @@ import { SearchBox, Hits } from 'react-instantsearch-dom'
 import { breakpoint } from './lib/breakpoints'
 // TODO: fonts
 
+export const HandBookWrapper = styled.div`
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+`
+
+export const HandBook = styled.img`
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 6px #000;
+
+  :hover {
+    opacity: 1;
+    animation: glow 1.5s;
+  }
+  @keyframes glow {
+    0% {
+      transform: rotate(3deg);
+    }
+    20% {
+      box-shadow: -5px 5px 5px rgba(105, 181, 100, 0.8);
+      transform: rotate(-3deg);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+`
+
+/* 
+----- Search styles ------
+*/
+
 export const SearchInput = styled(SearchBox)`
   width: 800px;
   button {
@@ -127,37 +163,6 @@ export const CloseBox = styled.div`
   color: #fff;
 `
 
-export const HandBookWrapper = styled.div`
-  height: 60px;
-  width: 60px;
-  border-radius: 10px;
-  margin-top: 2.5rem;
-  margin-left: 1rem;
-`
-
-export const HandBook = styled.img`
-  height: 70px;
-  width: 70px;
-  border-radius: 10px;
-  box-shadow: -1px 1px 6px #000;
-
-  :hover {
-    opacity: 1;
-    animation: glow 1.5s;
-  }
-  @keyframes glow {
-    0% {
-      transform: rotate(3deg);
-    }
-    20% {
-      box-shadow: -5px 5px 5px rgba(105, 181, 100, 0.8);
-      transform: rotate(-3deg);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-`
 /* 
 ----- Details styles ------
 */
@@ -189,10 +194,11 @@ export const DetailWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0rem 1rem;
-  max-height: 600px;
-  max-width: 630px;
+  max-height: 800px;
+  max-width: 800px;
   margin-top: 10px;
   margin-left: 10px;
+  margin-right: 3rem;
   overflow-y: auto;
   outline: 3px double #333;
   background: rgba(0, 0, 0, 0.8);
@@ -212,6 +218,8 @@ export const DetailWrapper = styled.div`
 
 export const MonsterName = styled.h1`
   color: #61efff;
+  display: flex;
+  align-items: center;
   text-transform: uppercase;
   img {
     height: 20px;
