@@ -12,6 +12,7 @@ import {
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import Loader from 'react-loader-spinner'
 import Img from 'react-image'
+import VisibilitySensor from 'react-visibility-sensor'
 import * as dbModule from '../lib/db/mhw-all-monsters.json'
 
 const findByName = monsterName => {
@@ -35,18 +36,25 @@ const Details = props => {
     rewards
   } = findByName(props.monsterName)
 
+  const iconStyles = {
+    height: '60px',
+    width: '60px',
+    borderRadius: '50%'
+  }
+  const monsterIcon = () => (
+    <Img
+      style={iconStyles}
+      src={icon}
+      loader={<Loader type='Rings' color='#04b53c' height={60} width={60} />}
+      alt='monster-icon'
+    />
+  )
+
   return (
     <DetailWrapper>
       <TitleWrapper>
         <MonsterName>
-          <Img
-            style={{ height: '60px', width: '60px', borderRadius: '50%' }}
-            src={icon}
-            loader={
-              <Loader type='Rings' color='#04b53c' height={60} width={60} />
-            }
-            alt='monster-icon'
-          />
+          <VisibilitySensor>{monsterIcon}</VisibilitySensor>
           {name}
         </MonsterName>
         <div>
