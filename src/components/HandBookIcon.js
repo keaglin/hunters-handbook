@@ -4,7 +4,7 @@ import { HandBookWrapper, HandBook } from '../styles';
 const HandBookIcon = props => {
   return (
     <HandBookWrapper>
-      <HandBook onClick={props.handleClick} src={'/img/handbookicon.png'} />
+      <HandBook onClick={props.handleClick} src={'./img/handbookicon.png'} />
     </HandBookWrapper>
   );
 };

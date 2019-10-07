@@ -5,9 +5,10 @@ const Config = () => (
     <p>Hunter's Handbook is zero config! Just activate and enjoy!</p>
     <p>How to use:</p>
     <ol>
-      <li>Mouse over the player to see the icon.</li>
-      <li>Click the icon to bring up the search box!</li>
+      <li>Mouse over the Twitch video player to see the Hunter's Handbook icon (a brown book with purple bookmark).</li>
+      <li>Click the Hunter's Handbook icon to bring up the search box!</li>
     </ol>
+    <p>If your cursor leaves the Twitch player, Hunter's Handbook fades into the background, quietly saving your place for later.</p>
   </div>
 )
 

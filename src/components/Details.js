@@ -9,7 +9,7 @@ import {
   MonsterDetailHeading,
   MonsterDescription
 } from '../styles'
-import * as dbModule from '../lib/db/mhw-all-monsters-1567568189811.json'
+import * as dbModule from '../lib/db/mhw-all-monsters.json'
 
 const findByName = monsterName => {
   const db = dbModule.default
@@ -35,7 +35,7 @@ const Details = props => {
     <DetailWrapper>
       <TitleWrapper>
         <MonsterName>
-          <img src='/img/transparent-arrow.svg' alt='arrow' />
+          <img src='./img/transparent-arrow.svg' alt='arrow' />
           {name}
         </MonsterName>
         <div>
@@ -84,9 +84,9 @@ const Details = props => {
           <MonsterDetailElement>
             <MonsterDetailHeading>Ailments</MonsterDetailHeading>
             <ul>
-              {ailments && ailments.length > 0
-                ? ailments.map(ail => {
-                    return <li key={ail.id}>{ail.name}</li>
+              {ailments && ailments.weak.length > 0
+                ? ailments.weak.map(ail => {
+                    return <li key={ail.name}>{ail.name}</li>
                   })
                 : ''}
             </ul>
@@ -98,7 +98,7 @@ const Details = props => {
                 ? rewards.map(rwd => {
                     return (
                       <li key={rwd.id}>
-                        {rwd.condition} {rwd.item.name} {rwd.item.rarity}
+                        {rwd.condition || ''} {rwd.item.name} {rwd.item.rarity}
                         {rwd.item.carryLimit} {rwd.item.value}
                       </li>
                     )

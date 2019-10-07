@@ -71,7 +71,7 @@
     ],
     "breaks": [],
     "weakSpots": [],
-    "icon": "",
+    "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/7/72/MHW-Aptonoth_Icon.png/revision/latest",
     "image": ""
   },
   {
@@ -9976,7 +9976,7 @@
           },
           {
             "type": "blunt",
-            "stars": 2,
+            "stars": 2
           },
           {
             "type": "ammo",

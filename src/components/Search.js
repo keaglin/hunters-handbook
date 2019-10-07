@@ -1,14 +1,10 @@
 import React from 'react' 
 import styled from 'styled-components' 
 import algoliasearch from 'algoliasearch/lite' 
-import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom' 
-import Details from './Details' 
-import { A } from 'hookrouter' 
- 
-// const results = props.results 
-// const showResults = props.showResults 
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom'
+
 const SearchInput = styled(SearchBox)` 
-  input { 
+  input {
     color: white; 
     font-size: 2em; 
     height: 50px; 
@@ -17,15 +13,15 @@ const SearchInput = styled(SearchBox)`
     outline: 1px double #333; 
     outline-offset: 3px; 
     background-image: linear-gradient(to top, #000 30%, #1d4753 100%); 
-  } 
+  }
  
-  input:hover { 
+  input:hover {
     box-shadow: 1px 0px 0px 3px #2e5d34; 
-  } 
+  }
  
-  li:focus { 
+  li:focus {
     box-shadow: 1px 0px 0px 3px #2e5d34; 
-  } 
+  }
 ` 
  
 const HitItemWrapper = styled.div` 
@@ -36,24 +32,19 @@ const HitItemWrapper = styled.div`
   margin-top: 1px; 
   margin-bottom: 1px; 
   border-top: dashed 1px slategrey; 
-  :focus { 
+  :focus {
     outline: none; 
-  } 
-  :hover { 
+  }
+  :hover {
     border-top: solid 1px rgba(105, 181, 100, 1); 
     border-bottom: solid 1px rgba(105, 181, 100, 1); 
-  } 
+  }
 ` 
  
-const Hit = ({ hit }) => ( 
-  // <A href={`/${hit.name}`}><HitItemWrapper tabIndex='0'>{hit.name}</HitItemWrapper></A> 
-  // <A href={`/details`}> 
-    <HitItemWrapper tabIndex='0'  
-    // onClick={showResults(!results)} 
-    > 
+const Hit = ({ hit }) => (
+    <HitItemWrapper tabIndex='0'> 
       {hit.name} 
     </HitItemWrapper> 
-  // </A> 
 ) 
  
 const HitList = styled(Hits)` 
@@ -71,7 +62,7 @@ const HitList = styled(Hits)`
     text-shadow: 0 -1px 0 #fff; 
   } 
   li:hover { 
-    background: linear-gradient( 
+    background: linear-gradient(
       to right, 
       rgba(0, 0, 0, 0.6) 0%, 
       rgba(105, 181, 100, 1) 30%, 
@@ -95,7 +86,7 @@ const SearchWrapper = styled.div`
   overflow: hidden; 
 ` 
  
-const searchClient = algoliasearch( 
+const searchClient = algoliasearch(
   'MT2HPEHTBE', 
   '91b84fdc5b74fbe6ecc908f7738f0e82' 
 ) 
@@ -107,7 +98,7 @@ const Search = () => {
     <SearchWrapper> 
       <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'> 
         <SearchInput /> 
-        <HitList hitComponent={Hit} /> 
+        <HitList hitComponent={Hit} />
       </InstantSearch> 
     </SearchWrapper> 
   ) 
