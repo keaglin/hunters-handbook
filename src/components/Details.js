@@ -113,9 +113,9 @@ const Details = props => {
             {weaknesses && weaknesses.length > 0
               ? weaknesses
                   .sort((a, b) => (a.stars > b.stars ? -1 : 1))
-                  .map(weak => {
+                  .map((weak, index) => {
                     return (
-                      <li key={weak.element}>
+                      <li key={index}>
                         {weak.element} {'⭐'.repeat(weak.stars)}
                       </li>
                     )
