@@ -45,7 +45,7 @@ module.exports = config => {
           template: './template.html',
           filename: entryPoints[name].outputHtml
         }))
-        console.log('plugins inside loop', plugins)
+        // console.log('plugins inside loop', plugins)
       }
     }    
   }

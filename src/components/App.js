@@ -88,7 +88,7 @@ const App = () => {
           }}
           submit={
             <img
-              src='/img/transparent-arrow.svg'
+              src='./img/transparent-arrow.svg'
               className='submit-search'
               alt='search monster list'
             />
