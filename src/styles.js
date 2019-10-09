@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 import { SearchBox, Hits } from 'react-instantsearch-dom'
 import { breakpoint } from './lib/breakpoints'
-// TODO: fonts
+/*
+font-family: 'Cardo', serif;
+font-family: 'Noto Serif', serif;
+*/
 
 export const HandBookWrapper = styled.div`
   height: 60px;
@@ -15,19 +18,17 @@ export const HandBook = styled.img`
   height: 70px;
   width: 70px;
   border-radius: 10px;
-  box-shadow: -1px 1px 6px #000;
-
+  /*box-shadow: -1px 1px 6px #000;*/
   :hover {
     opacity: 1;
     animation: glow 1.5s;
   }
   @keyframes glow {
     0% {
-      transform: rotate(3deg);
+      transform: rotate(7deg);
     }
-    20% {
-      box-shadow: -5px 5px 5px rgba(105, 181, 100, 0.8);
-      transform: rotate(-3deg);
+    50% {
+      transform: rotate(-7deg);
     }
     100% {
       opacity: 1;
@@ -127,23 +128,22 @@ export const HitList = styled(Hits)`
 `
 
 export const SearchWrapper = styled.div`
-display: flex;
-height: 400px;
-width: 640px
-border: 1px grey solid;
-border-radius: 10px;
-padding: 10px;
-background: rgba(0, 0, 0);
-opacity: 0.9;
-margin-left: 50px;
-overflow: hidden;
-@media ${breakpoint.tablet} {
-  padding: 0;
-  margin: 0;
-  width: 350px;
-  height: 100%;
-} 
-
+  display: flex;
+  height: 400px;
+  width: 622px;
+  border: 1px grey solid;
+  outline: 3px double #333;
+  padding: 10px;
+  background: rgba(0, 0, 0);
+  opacity: 0.9;
+  margin-left: 50px;
+  overflow: hidden;
+  @media ${breakpoint.tablet} {
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    height: 100%;
+  }
 `
 
 export const CloseBox = styled.div`
@@ -201,7 +201,8 @@ export const DetailWrapper = styled.div`
   margin-right: 3rem;
   overflow-y: auto;
   outline: 3px double #333;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0);
+  opacity: 0.9;
   color: white;
   ul {
     list-style: none;
@@ -219,12 +220,9 @@ export const DetailWrapper = styled.div`
 export const MonsterName = styled.h1`
   color: #61efff;
   display: flex;
+  font-family: 'Cardo', serif;
   align-items: center;
   text-transform: uppercase;
-  img {
-    height: 20px;
-    padding-right: 5px;
-  }
 `
 export const MonsterDescription = styled.div`
   display: inline;
@@ -247,9 +245,20 @@ export const TitleWrapper = styled.div`
   }
 `
 
+export const TypeSpeciesWrapper = styled.div`
+  margin-right: 3rem;
+  font-family: 'Noto Serif', serif;
+  @media ${breakpoint.mobileL} {
+    display: none;
+  }
+`
+
 export const WeaknessDescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  @media ${breakpoint.tablet} {
+    margin-left: 30px;
+  }
 `
 
 export const MonsterDetails = styled.div`
@@ -259,17 +268,38 @@ export const MonsterDetails = styled.div`
 `
 
 export const MonsterDetailElement = styled.div`
-  max-width: 220px;
+  font-family: 'Noto Serif', serif;
+  max-width: 280px;
   padding-top: 1rem;
+  margin-right: 3rem;
 `
 
 export const MonsterDetailHeading = styled.h3`
   border-bottom: 1px dashed grey;
   color: #61efff;
+  font-family: 'Cardo', serif;
   padding-bottom: 3px;
   margin: 0;
   margin-bottom: 1rem;
 `
+export const BackBtn = styled.button`
+  width: 100px;
+  height: 30px;
+  color: #fff;
+  font-family: 'Noto Serif', serif;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  outline: 3px single white;
+  background-image: linear-gradient(to top, #000 0%, #333 65%, #61efff 100%);
+  opacity: 0.87;
+  :hover {
+    border-radius: 0px;
+    outline: solid 3px rgba(105, 181, 100, 1);
+  }
+`
+
 /* 
 ----- Main Wrapper styles ------
 */

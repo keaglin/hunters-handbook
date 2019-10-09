@@ -7,7 +7,9 @@ import {
   MonsterDetails,
   MonsterDetailElement,
   MonsterDetailHeading,
-  MonsterDescription
+  MonsterDescription,
+  TypeSpeciesWrapper,
+  BackBtn
 } from '../styles'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import Loader from 'react-loader-spinner'
@@ -37,9 +39,11 @@ const Details = props => {
   } = findByName(props.monsterName)
 
   const iconStyles = {
-    height: '60px',
-    width: '60px',
-    borderRadius: '50%'
+    height: '70px',
+    width: '70px',
+    padding: '0.3rem',
+    marginRight: '0.8rem',
+    outline: '3px double grey'
   }
   const monsterIcon = () => (
     <Img
@@ -57,10 +61,10 @@ const Details = props => {
           <VisibilitySensor>{monsterIcon}</VisibilitySensor>
           {name}
         </MonsterName>
-        <div>
+        <TypeSpeciesWrapper>
           <p>{species}</p>
           <p>{type}</p>
-        </div>
+        </TypeSpeciesWrapper>
       </TitleWrapper>
       <WeaknessDescriptionWrapper>
         <MonsterDetails>
@@ -134,8 +138,18 @@ const Details = props => {
                   .sort((a, b) => (a.stars > b.stars ? -1 : 1))
                   .map((weak, index) => {
                     return (
-                      <li key={index}>
-                        {weak.element} {'⭐'.repeat(weak.stars)}
+                      <li
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center'
+                        }}
+                        key={index}
+                      >
+                        <span style={{ paddingRight: '0.3rem' }}>
+                          {weak.element}
+                        </span>
+                        <span>{'⭐'.repeat(weak.stars)}</span>
                       </li>
                     )
                   })
@@ -145,7 +159,7 @@ const Details = props => {
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={props.toggleSearch}>Back</button>
+        <BackBtn onClick={props.toggleSearch}>Back</BackBtn>
       </div>
     </DetailWrapper>
   )
