@@ -7,8 +7,14 @@ import {
   MonsterDetails,
   MonsterDetailElement,
   MonsterDetailHeading,
-  MonsterDescription
+  MonsterDescription,
+  TypeSpeciesWrapper,
+  BackBtn
 } from '../styles'
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
+import Loader from 'react-loader-spinner'
+import Img from 'react-image'
+import VisibilitySensor from 'react-visibility-sensor'
 import * as dbModule from '../lib/db/mhw-all-monsters.json'
 
 const findByName = monsterName => {
@@ -27,21 +33,38 @@ const Details = props => {
     resistances,
     weaknesses,
     type,
+    icon,
     species,
     rewards
   } = findByName(props.monsterName)
+
+  const iconStyles = {
+    height: '70px',
+    width: '70px',
+    padding: '0.3rem',
+    marginRight: '0.8rem',
+    outline: '3px double grey'
+  }
+  const monsterIcon = () => (
+    <Img
+      style={iconStyles}
+      src={icon}
+      loader={<Loader type='Rings' color='#04b53c' height={60} width={60} />}
+      alt='monster-icon'
+    />
+  )
 
   return (
     <DetailWrapper>
       <TitleWrapper>
         <MonsterName>
-          <img src='./img/transparent-arrow.svg' alt='arrow' />
+          <VisibilitySensor>{monsterIcon}</VisibilitySensor>
           {name}
         </MonsterName>
-        <div>
+        <TypeSpeciesWrapper>
           <p>{species}</p>
           <p>{type}</p>
-        </div>
+        </TypeSpeciesWrapper>
       </TitleWrapper>
       <WeaknessDescriptionWrapper>
         <MonsterDetails>
@@ -60,9 +83,9 @@ const Details = props => {
             <MonsterDetailHeading>Resistances</MonsterDetailHeading>
             <ul>
               {resistances && resistances.length > 0
-                ? resistances.map(res => {
+                ? resistances.map((res, index) => {
                     return (
-                      <li key={res.element}>
+                      <li key={index}>
                         {res.element} {res.condition && `when ${res.condition}`}
                       </li>
                     )
@@ -113,10 +136,20 @@ const Details = props => {
             {weaknesses && weaknesses.length > 0
               ? weaknesses
                   .sort((a, b) => (a.stars > b.stars ? -1 : 1))
-                  .map(weak => {
+                  .map((weak, index) => {
                     return (
-                      <li key={weak.element}>
-                        {weak.element} {'⭐'.repeat(weak.stars)}
+                      <li
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center'
+                        }}
+                        key={index}
+                      >
+                        <span style={{ paddingRight: '0.3rem' }}>
+                          {weak.element}
+                        </span>
+                        <span>{'⭐'.repeat(weak.stars)}</span>
                       </li>
                     )
                   })
@@ -126,7 +159,7 @@ const Details = props => {
       </WeaknessDescriptionWrapper>
 
       <div>
-        <button onClick={props.toggleSearch}>Back</button>
+        <BackBtn onClick={props.toggleSearch}>Back</BackBtn>
       </div>
     </DetailWrapper>
   )
