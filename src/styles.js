@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { SearchBox, Hits } from 'react-instantsearch-dom'
 import { breakpoint } from './lib/breakpoints'
-/*
-font-family: 'Cardo', serif;
-font-family: 'Noto Serif', serif;
-*/
+import './index.css'
+// import './fonts/cardo/Cardo-Regular.ttf'
+// import './fonts/noto-serif/NotoSerif-Regular.ttf'
+
 
 export const HandBookWrapper = styled.div`
   height: 60px;
@@ -49,8 +49,8 @@ export const SearchInput = styled(SearchBox)`
   }
   form {
     display: flex;
-    background: url('/img/searchoutline.png') no-repeat center 0,
-      url('/img/searchoutline-bottom.png') no-repeat center bottom;
+    background: url('./img/searchoutline.png') no-repeat center 0,
+      url('./img/searchoutline-bottom.png') no-repeat center bottom;
     margin-bottom: 5px;
     width: 624px;
     justify-content: center;

@@ -1,5 +1,5 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin'
- 
+
 let entryPoints = {
   VideoComponent: {
     path: "./src/VideoComponent.js", 

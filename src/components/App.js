@@ -14,6 +14,7 @@ import {
 import { isMobile } from 'react-device-detect'
 import { useTransition, animated } from 'react-spring'
 
+
 const searchClient = algoliasearch(
   'MT2HPEHTBE',
   '91b84fdc5b74fbe6ecc908f7738f0e82'

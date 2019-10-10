@@ -2133,6 +2133,238 @@
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/76/MHW-Barroth_Render_001_copy.jpg"
   },
   {
+    "id": 21,
+    "name": "Jyuratodus",
+    "type": "large",
+    "species": "piscine wyvern",
+    "description": "A large piscine wyvern that inhabits the swamps of the Wildspire Waste. It uses mud to capture prey, and it's known to battle Barroth over territory.",
+    "elements": [
+      "water"
+    ],
+    "ailments": {
+      "used": [
+      {
+        "id": 12,
+        "name": "Waterblight",
+        "description": "Waterblight slows down stamina recovery rate.",
+        "recovery": {
+          "actions": [],
+          "items": [
+            {
+              "id": 7,
+              "name": "Nulberry",
+              "description": "A mysterious berry that cures various blights.",
+              "rarity": 2,
+              "value": 120,
+              "carryLimit": 10
+            }
+          ]
+        },
+        "protection": {
+          "skills": [],
+          "items": []
+        }
+      },
+      {
+        "id": 15,
+        "name": "Muddy",
+        "description": "A status effect inflicted when mud thrown by a monster covers the Hunter and makes movement more difficult. Slows all actions until the hunter leaves the mud.",
+        "recovery": {
+          "actions": [],
+          "items": []
+        },
+        "protection": {
+          "skills": [],
+          "items": []
+        }
+      }
+      ],
+      "weak": []
+    },
+    "locations": [
+      {
+        "id": 3,
+        "name": "Wildspire Waste",
+        "zoneCount": 15
+      }
+    ],
+    "resistances": [
+      {
+        "element": "fire",
+        "condition": "covered in mud"
+      },
+      {
+        "element": "thunder",
+        "condition": "covered in mud"
+      },
+      {
+        "element": "water",
+        "condition": null
+      }
+    ],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": "covered in mud"
+      },
+      {
+        "element": "thunder",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "poison",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "sleep",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "paralysis",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "blast",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "stun",
+        "stars": 3,
+        "condition": null
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/2/2d/MHW-Great_Jagras_Icon.png/revision/latest/",
+    "image": ""
+  },
+  {
+    "id": 22,
+    "name": "Tobi-Kadachi",
+    "type": "large",
+    "species": "fanged wyvern",
+    "description": "A fanged wyvern that flies among the trees of the Ancient Forest. Its penchant to brush against the ground and the trees as it moves around builds up static electricity within its fur.",
+    "elements": [
+      "thunder"
+    ],
+    "ailments": {
+      "used": [
+      {
+        "id": 11,
+        "name": "Thunderblight",
+        "description": "Thunderblight increases the chance of being stunned.",
+        "recovery": {
+          "actions": [
+            "dodge"
+          ],
+          "items": [
+            {
+              "id": 7,
+              "name": "Nulberry",
+              "description": "A mysterious berry that cures various blights.",
+              "rarity": 2,
+              "value": 120,
+              "carryLimit": 10
+            }
+          ]
+        },
+        "protection": {
+          "skills": [],
+          "items": []
+        }
+      }
+      ],
+      "weak": []
+    },
+    "locations": [
+      {
+        "id": 1,
+        "name": "Ancient Forest",
+        "zoneCount": 17
+      }
+    ],
+    "resistances": [
+      {
+        "element": "thunder",
+        "condition": null
+      }
+    ],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "poison",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "sleep",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "paralysis",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "blast",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "stun",
+        "stars": 2,
+        "condition": null
+      }
+    ],
+    "rewards": [],
+    "breaks": [],
+    "weakSpots": [],
+    "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/d/d7/MHW-Teostra_Icon.png/revision/latest/",
+    "image": ""
+  },
+  {
     "id": 23,
     "name": "Anjanath",
     "type": "large",
