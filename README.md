@@ -1,7 +1,7 @@
 <!-- banner w logo -->
 # Hunter's Handbook
 
-## About/Description/Raison d'Etre
+## About
 Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search monster name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances.
 <!-- need some examples here -->
 
