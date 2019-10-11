@@ -29,11 +29,9 @@ const App = () => {
 
   useEffect(() => {
     if (isMobile) {
-      // console.log('mobile-mode')
       setToggleEntryIcon(true)
       setIsHovering(true)
     } else {
-      // console.log(window.innerWidth, window.innerHeight)
     }
   }, [])
 
