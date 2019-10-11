@@ -43,7 +43,6 @@ config.module.rules.concat(rules)
 let entry = {}
 let output = []
 for (name in entryPoints) {
-  // console.log(name) 
   if (entryPoints[name].build) {
     entry[name] = entryPoints[name].path
     output.push(new HtmlWebpackPlugin({

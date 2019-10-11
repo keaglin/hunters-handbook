@@ -32,7 +32,6 @@ module.exports = config => {
     path: path.resolve(__dirname, 'build')
   }
 
-  // edit webpack plugins here!
   let plugins = []
 
   for (name in entryPoints) {
@@ -45,7 +44,6 @@ module.exports = config => {
           template: './template.html',
           filename: entryPoints[name].outputHtml
         }))
-        // console.log('plugins inside loop', plugins)
       }
     }
   }
@@ -78,7 +76,7 @@ module.exports = config => {
     entry,
     output,
     optimization: {
-      minimize: false // neccessary to pass Twitch's review process
+      minimize: false
     },
   }
 

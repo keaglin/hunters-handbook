@@ -23,30 +23,25 @@ const findByName = monsterName => {
   return found
 }
 
-// twitch.ext.onContext((ctx, ctxProps) => {
-//   if (ctxProps.includes('displayResolution')) {
-//     // change the height to fit inside the player
-//   }
-// })
-
 const titleCase = str => {
-  // let splitChar
-  if (str.includes(' ')) {
-    str = str.split(' ')
-    .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
-    .join(' ')
+  if (str) {
+    if (str.includes(' ')) {
+      str = str.split(' ')
+      .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+      .join(' ')
+      return str
+    }
+    if (str.includes('-')) {
+      str = str.split('-')
+      .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+      .join('-')
+      return str
+    }
+    let strArr = str.split('')
+    strArr[0] = strArr[0].toUpperCase()
+    str = strArr.join('')
     return str
   }
-  if (str.includes('-')) {
-    str = str.split('-')
-    .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
-    .join('-')
-    return str
-  }
-  let strArr = str.split('')
-  strArr[0] = strArr[0].toUpperCase()
-  str = strArr.join('')
-  return str
 }
 
 const Details = props => {
@@ -138,7 +133,7 @@ const Details = props => {
             <ul>
               {ailments && ailments.weak.length > 0
                 ? ailments.weak.map((ail, index) => {
-                    return <li key={index}>{ail.name}</li>
+                    return <li key={index}>{titleCase(ail.name)}</li>
                   })
                 : ''}
             </ul>
