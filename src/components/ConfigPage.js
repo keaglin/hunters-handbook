@@ -9,6 +9,7 @@ const Config = () => (
       <li>Click the Hunter's Handbook icon to bring up the search box!</li>
     </ol>
     <p>If your cursor leaves the Twitch player, Hunter's Handbook fades into the background, quietly saving your place for later.</p>
+    <p>Thanks for installing Hunter's Handbook. Please feel free to <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">email us</a> any feedback \.</p>
   </div>
 )
 
