@@ -5,7 +5,6 @@ import './index.css'
 // import './fonts/cardo/Cardo-Regular.ttf'
 // import './fonts/noto-serif/NotoSerif-Regular.ttf'
 
-
 export const HandBookWrapper = styled.div`
   height: 60px;
   width: 60px;
@@ -36,7 +35,7 @@ export const HandBook = styled.img`
   }
 `
 
-/* 
+/*
 ----- Search styles ------
 */
 
@@ -137,7 +136,30 @@ export const SearchWrapper = styled.div`
   background: rgba(0, 0, 0);
   opacity: 0.9;
   margin-left: 50px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #333;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #04b53c;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 15%,
+      transparent 25%,
+      transparent 10%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 25%,
+      transparent
+    );
+  }
+
   @media ${breakpoint.tablet} {
     padding: 0;
     margin: 0;
@@ -152,18 +174,23 @@ export const CloseBox = styled.div`
   justify-content: center;
   align-items: center;
   left: 20px;
-  top: -50px;
-  border: solid black 3px;
+  top: -38px;
   font-size: 1.5 rem;
   user-select: none;
   cursor: pointer;
   height: 35px;
   width: 35px;
-  border-radius: 50%;
   color: #fff;
+  img {
+    height: 20px;
+    width: 20px;
+  }
+  img:hover {
+    transform: scale(1.2);
+  }
 `
 
-/* 
+/*
 ----- Details styles ------
 */
 
@@ -204,6 +231,7 @@ export const DetailWrapper = styled.div`
   background: rgba(0, 0, 0);
   opacity: 0.9;
   color: white;
+  padding-bottom: 3rem;
   ul {
     list-style: none;
     padding: 0;
@@ -300,7 +328,7 @@ export const BackBtn = styled.button`
   }
 `
 
-/* 
+/*
 ----- Main Wrapper styles ------
 */
 export const TempWrapper = styled.div`
@@ -309,7 +337,7 @@ export const TempWrapper = styled.div`
   padding-top: 5rem;
   padding-right: 7rem;
   padding-bottom: 5rem;
-  /*background-image: url('/img/samplescreen.png');*/
+  background-image: url('/img/samplescreen.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

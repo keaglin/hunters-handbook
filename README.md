@@ -17,7 +17,7 @@ Under active development as of 10/10/19
 > NOTE: This extension is currently in the pre-release/testing phase. If you want to install it, you must be whitelisted and will receive a warning that it's in testing. The extension will be functional, but only whitelisted users can see and interact with it at this time. Once released officially, it will be available for use and interaction by all users.
 Follow these instructions to install the Hunter's Handbook extension on your Twitch channel (upon release)  
 1. Go to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions` on Twitch
-1. Search for "Hunters Handbook"
+1. Search for "Hunter's Handbook"
 1. Look for the latest version (version number in bottom right corner of the preview image)
 1. Hover over the latest version for a dialog box that gives you 2 buttons (Details and Install)
 1. Click "Install"
@@ -48,3 +48,5 @@ We are super grateful to have found so many good resources that allowed us to ge
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Rescripts](https://github.com/harrysolovay/rescripts) allowed us to rewire CRA to make a Twitch-compatible React app
 - Twitch Dev's [Bot Commander](https://github.com/twitchdev/bot-commander)
+- Handbook Icon: [Rafael Chiamenti](https://www.artstation.com/rafaelchm)
+- [Monster Hunter World](https://www.monsterhunter.com/world-iceborne/us/ "Monster Hunter World Official Website")

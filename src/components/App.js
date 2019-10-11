@@ -14,7 +14,6 @@ import {
 import { isMobile } from 'react-device-detect'
 import { useTransition, animated } from 'react-spring'
 
-
 const searchClient = algoliasearch(
   'MT2HPEHTBE',
   '91b84fdc5b74fbe6ecc908f7738f0e82'
@@ -26,6 +25,7 @@ const App = () => {
   const [isHovering, setIsHovering] = useState(false)
   const [toggleEntryIcon, setToggleEntryIcon] = useState(true)
   const [isSearching, setIsSearching] = useState(false)
+  const [currentSearchValue, setCurrentSearchValue] = useState('')
 
   useEffect(() => {
     if (isMobile) {
@@ -39,6 +39,10 @@ const App = () => {
 
   const toggleSearch = () => {
     setToggleDetails(!toggleDetails)
+  }
+
+  const handleSearchValueChange = event => {
+    setCurrentSearchValue(event.currentTarget.value)
   }
 
   const handleMonsterClick = currentMonsterName => {
@@ -81,9 +85,13 @@ const App = () => {
 
   const Search = (
     <SearchWrapper>
-      <CloseBox onClick={handleCloseSearch}>X</CloseBox>
+      <CloseBox onClick={handleCloseSearch}>
+        <img src='./img/back-arw.svg' alt='back-to-book' />
+      </CloseBox>
       <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
         <SearchInput
+          onChange={handleSearchValueChange}
+          defaultRefinement={currentSearchValue}
           translations={{
             placeholder: 'Enter Monster...'
           }}
