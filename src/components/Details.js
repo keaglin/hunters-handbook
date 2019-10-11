@@ -57,6 +57,9 @@ const Details = props => {
 
   return (
     <DetailWrapper>
+      <div>
+        <BackBtn onClick={props.toggleSearch}>Back</BackBtn>
+      </div>
       <TitleWrapper>
         <MonsterName>
           <VisibilitySensor>{monsterIcon}</VisibilitySensor>
@@ -145,8 +148,7 @@ const Details = props => {
                           justifyContent: 'space-between',
                           alignItems: 'center'
                         }}
-                        key={index}
-                      >
+                        key={index}>
                         <span style={{ paddingRight: '0.3rem' }}>
                           {weak.element}
                         </span>
@@ -158,10 +160,6 @@ const Details = props => {
           </ul>
         </MonsterDetailElement>
       </WeaknessDescriptionWrapper>
-
-      <div>
-        <BackBtn onClick={props.toggleSearch}>Back</BackBtn>
-      </div>
     </DetailWrapper>
   )
 }
