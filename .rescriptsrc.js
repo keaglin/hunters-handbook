@@ -47,7 +47,7 @@ module.exports = config => {
         }))
         // console.log('plugins inside loop', plugins)
       }
-    }    
+    }
   }
 
   if (config.mode === 'development') {
@@ -55,6 +55,23 @@ module.exports = config => {
       contentBase: path.join(__dirname,'public')
     }
   }
+  
+  let rules = [
+    {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }
+      ]
+    }
+  ]
+
+  config.module.rules.concat(rules)
 
   config = {
     ...config,
