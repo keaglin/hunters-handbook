@@ -47,7 +47,7 @@ module.exports = config => {
         }))
         // console.log('plugins inside loop', plugins)
       }
-    }    
+    }
   }
 
   if (config.mode === 'development') {
@@ -56,10 +56,80 @@ module.exports = config => {
     }
   }
 
+  // console.log('loaders', config.loaders)
+
+  
+  let rules = [
+    // {
+    //   test: /\.css$/,
+    //   use: [
+    //     // style-loader
+    //     { loader: 'style-loader' },
+    //     // css-loader
+    //     {
+    //       loader: 'css-loader',
+    //       options: {
+    //         modules: true
+    //       }
+    //     },
+    //   ]
+    // }
+    // ,
+    // file-loader
+    {
+      test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }
+      ]
+    }
+  ]
+
+  rules = config.module.rules.concat(rules)
+
+  let module = {
+    rules
+  }
+
+  console.log('rules is', rules)
+  console.log('config.module.rules is', config.module.rules)
+  // console.log('...rules is', ...rules)
+  // console.log('{...rules} is', {...rules})
+  // console.log('{...config.module.rules, ...rules} is', {...config.module.rules, ...rules})
+  // console.log('{...config.module.rules, rules} is', {...config.module.rules, rules})
+  // console.log('module is', config.module)
+  // let loaders = [
+  //   {
+  //     test: /\.css$/,
+  //     loader: 'style-loader!css-loader!'
+  //   },
+  //   {
+  //     test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+  //     use: [
+  //       {
+  //         loader: 'file-loader',
+  //         options: {
+  //           name: '[name].[ext]',
+  //           outputPath: 'fonts/'
+  //         }
+  //       }
+  //     ]
+  //   }
+  // ]
+
+  // console.log('config.module.rules', config.module.rules)
+  // console.log('config.module', config.module)
+
   config = {
     ...config,
     entry,
     output,
+    module,
     optimization: {
       minimize: false // neccessary to pass Twitch's review process
     },

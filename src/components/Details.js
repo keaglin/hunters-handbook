@@ -24,7 +24,6 @@ const findByName = monsterName => {
 }
 
 const Details = props => {
-  console.log('findByName', findByName(props.monsterName))
   const {
     name,
     description,

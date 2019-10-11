@@ -22,6 +22,23 @@ let entryPoints = {
     build: true
   }
 }
+
+let rules = [
+  {
+    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      }
+    ]
+  }
+]
+
+config.module.rules.concat(rules)
  
 let entry = {}
 let output = []
