@@ -23,6 +23,32 @@ const findByName = monsterName => {
   return found
 }
 
+// twitch.ext.onContext((ctx, ctxProps) => {
+//   if (ctxProps.includes('displayResolution')) {
+//     // change the height to fit inside the player
+//   }
+// })
+
+const titleCase = str => {
+  // let splitChar
+  if (str.includes(' ')) {
+    str = str.split(' ')
+    .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+    .join(' ')
+    return str
+  }
+  if (str.includes('-')) {
+    str = str.split('-')
+    .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+    .join('-')
+    return str
+  }
+  let strArr = str.split('')
+  strArr[0] = strArr[0].toUpperCase()
+  str = strArr.join('')
+  return str
+}
+
 const Details = props => {
   const {
     name,
@@ -65,8 +91,8 @@ const Details = props => {
           {name}
         </MonsterName>
         <TypeSpeciesWrapper>
-          <p>{species}</p>
-          <p>{type}</p>
+          <p>{titleCase(species)}</p>
+          <p>{titleCase(type)}</p>
         </TypeSpeciesWrapper>
       </TitleWrapper>
       <WeaknessDescriptionWrapper>
@@ -89,7 +115,7 @@ const Details = props => {
                 ? resistances.map((res, index) => {
                     return (
                       <li key={index}>
-                        {res.element} {res.condition && `when ${res.condition}`}
+                        {titleCase(res.element)} {res.condition && `when ${res.condition}`}
                       </li>
                     )
                   })
@@ -101,7 +127,7 @@ const Details = props => {
             <ul>
               {elements && elements.length > 0
                 ? elements.map(el => {
-                    return <li key={el}>{el}</li>
+                    return <li key={el}>{titleCase(el)}</li>
                   })
                 : ''}
             </ul>
@@ -149,7 +175,7 @@ const Details = props => {
                         }}
                         key={index}>
                         <span style={{ paddingRight: '0.3rem' }}>
-                          {weak.element}
+                          {titleCase(weak.element)}
                         </span>
                         <span>{'⭐'.repeat(weak.stars)}</span>
                       </li>
