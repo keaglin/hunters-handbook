@@ -136,7 +136,30 @@ export const SearchWrapper = styled.div`
   background: rgba(0, 0, 0);
   opacity: 0.9;
   margin-left: 50px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+    background-color: #333;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #04b53c;
+    background-image: -webkit-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 15%,
+      transparent 25%,
+      transparent 10%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.2) 75%,
+      transparent 25%,
+      transparent
+    );
+  }
+
   @media ${breakpoint.tablet} {
     padding: 0;
     margin: 0;
