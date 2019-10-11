@@ -7806,7 +7806,10 @@
     "species": "elder dragon",
     "description": "A terrible elder dragon that appears when other elders are in the vicinity. Its penchant for destruction is well documented.",
     "elements": [],
-    "ailments": [],
+    "ailments": {
+      "used": [],
+      "weak": []
+  },
     "locations": [
       {
         "id": 3,
