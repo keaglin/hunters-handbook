@@ -208,6 +208,7 @@ export const DetailWrapper = styled.div`
   background: rgba(0, 0, 0);
   opacity: 0.9;
   color: white;
+  padding-bottom: 3rem;
   ul {
     list-style: none;
     padding: 0;
