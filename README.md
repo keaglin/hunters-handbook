@@ -48,3 +48,5 @@ We are super grateful to have found so many good resources that allowed us to ge
 - [Create React App](https://github.com/facebook/create-react-app)
 - [Rescripts](https://github.com/harrysolovay/rescripts) allowed us to rewire CRA to make a Twitch-compatible React app
 - Twitch Dev's [Bot Commander](https://github.com/twitchdev/bot-commander)
+- Handbook Icon:  Rafaelch Martins 
+- MonsterHunter.com
