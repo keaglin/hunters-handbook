@@ -336,8 +336,4 @@ export const TempWrapper = styled.div`
   padding-top: 5rem;
   padding-right: 7rem;
   padding-bottom: 5rem;
-  background-image: url('/img/samplescreen.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 `
