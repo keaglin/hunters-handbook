@@ -85,7 +85,9 @@ const App = () => {
 
   const Search = (
     <SearchWrapper>
-      <CloseBox onClick={handleCloseSearch}>X</CloseBox>
+      <CloseBox onClick={handleCloseSearch}>
+        <img src='./img/back-arw.svg' alt='back-to-book' />
+      </CloseBox>
       <InstantSearch searchClient={searchClient} indexName='dev_MHW-Monsters'>
         <SearchInput
           onChange={handleSearchValueChange}
