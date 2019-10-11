@@ -55,27 +55,8 @@ module.exports = config => {
       contentBase: path.join(__dirname,'public')
     }
   }
-
-  // console.log('loaders', config.loaders)
-
   
   let rules = [
-    // {
-    //   test: /\.css$/,
-    //   use: [
-    //     // style-loader
-    //     { loader: 'style-loader' },
-    //     // css-loader
-    //     {
-    //       loader: 'css-loader',
-    //       options: {
-    //         modules: true
-    //       }
-    //     },
-    //   ]
-    // }
-    // ,
-    // file-loader
     {
       test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       use: [
@@ -90,46 +71,12 @@ module.exports = config => {
     }
   ]
 
-  rules = config.module.rules.concat(rules)
-
-  let module = {
-    rules
-  }
-
-  console.log('rules is', rules)
-  console.log('config.module.rules is', config.module.rules)
-  // console.log('...rules is', ...rules)
-  // console.log('{...rules} is', {...rules})
-  // console.log('{...config.module.rules, ...rules} is', {...config.module.rules, ...rules})
-  // console.log('{...config.module.rules, rules} is', {...config.module.rules, rules})
-  // console.log('module is', config.module)
-  // let loaders = [
-  //   {
-  //     test: /\.css$/,
-  //     loader: 'style-loader!css-loader!'
-  //   },
-  //   {
-  //     test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-  //     use: [
-  //       {
-  //         loader: 'file-loader',
-  //         options: {
-  //           name: '[name].[ext]',
-  //           outputPath: 'fonts/'
-  //         }
-  //       }
-  //     ]
-  //   }
-  // ]
-
-  // console.log('config.module.rules', config.module.rules)
-  // console.log('config.module', config.module)
+  config.module.rules.concat(rules)
 
   config = {
     ...config,
     entry,
     output,
-    module,
     optimization: {
       minimize: false // neccessary to pass Twitch's review process
     },
