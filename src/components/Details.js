@@ -112,8 +112,8 @@ const Details = props => {
             <MonsterDetailHeading>Ailments</MonsterDetailHeading>
             <ul>
               {ailments && ailments.weak.length > 0
-                ? ailments.weak.map(ail => {
-                    return <li key={ail.name}>{ail.name}</li>
+                ? ailments.weak.map((ail, index) => {
+                    return <li key={index}>{ail.name}</li>
                   })
                 : ''}
             </ul>
@@ -122,9 +122,9 @@ const Details = props => {
             <MonsterDetailHeading>Rewards</MonsterDetailHeading>
             <ul>
               {rewards && rewards.length > 0
-                ? rewards.map(rwd => {
+                ? rewards.map((rwd, index) => {
                     return (
-                      <li key={rwd.id}>
+                      <li key={index}>
                         {rwd.condition || ''} {rwd.item.name} {rwd.item.rarity}
                         {rwd.item.carryLimit} {rwd.item.value}
                       </li>
