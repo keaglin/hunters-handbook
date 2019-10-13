@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { SearchBox, Hits } from 'react-instantsearch-dom'
 import { breakpoint } from './lib/breakpoints'
 import './index.css'
-// import './fonts/cardo/Cardo-Regular.ttf'
-// import './fonts/noto-serif/NotoSerif-Regular.ttf'
 
 export const HandBookWrapper = styled.div`
   height: 60px;
