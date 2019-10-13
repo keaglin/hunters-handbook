@@ -1,5 +1,5 @@
 <!-- banner w logo -->
-![Hunter's Handbook banner. A brown book logo with a purple bookmark and the words "Hunter's Handbook" next to it.](./img/banner-warm.png)
+[![Hunter's Handbook banner. A brown book logo with a purple bookmark and the words "Hunter's Handbook" next to it.](./img/banner-warm.png)](#top)
 <!-- # Hunter's Handbook -->
 <h4 align="center">A game-matched Twitch extension for Monster Hunter: World and Iceborne.</h4>
 <div align="center">
@@ -41,7 +41,7 @@ Follow these instructions to install the Hunter's Handbook extension on your Twi
 > NOTE: You can only have 1 (one) overlay extension enabled on your Twitch channel at any one time. If you decide to activate Hunter's Handbook, any previous overlay extension will likely be disabled as a result.
 8. That's all the config you need! Check out the [usage instructions](#how-to-use) if you need to know where to go from here!  
 
-[Back to top](#)  
+[Back to top](#top)  
 
 ### Using the dev server
 Follow these instructions to run the Hunter's Handbook React app locally on your machine  
@@ -90,7 +90,7 @@ We are super grateful to have found so many good resources that allowed us to ge
 
 
 <div align="center">
-<a href="#">Top</a> &mdash;
+<a href="#top">Top</a> &mdash;
 <a href="#about">About</a> &mdash;
 <a href="#project-status">Status</a> &mdash;
 <a href="#installation">Install</a> &mdash;
