@@ -60,6 +60,8 @@ export const SearchInput = styled(SearchBox)`
     outline: none;
   }
   input {
+    -webkit-appearance: none;
+    border-radius: 0;
     border: none;
     color: white;
     font-size: 1.7rem;
