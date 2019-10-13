@@ -2,7 +2,7 @@
 ![Hunter's Handbook banner. A brown book logo with a purple bookmark and the words "Hunter's Handbook" next to it.](./img/banner-warm.png)
 <!-- # Hunter's Handbook -->
 <h4 align="center">A game-matched Twitch extension for Monster Hunter: World and Iceborne.</h4>
-<div style="text-align: center;">
+<div align="center">
 <a href="#about">About</a> &mdash;
 <a href="#project-status">Status</a> &mdash;
 <a href="#installation">Install</a> &mdash;
@@ -89,7 +89,7 @@ We are super grateful to have found so many good resources that allowed us to ge
 - [Monster Hunter World](https://www.monsterhunter.com/world-iceborne/us/ "Monster Hunter World Official Website")
 
 
-<div style="text-align: center;">
+<div align="center">
 <a href="#">Top</a> &mdash;
 <a href="#about">About</a> &mdash;
 <a href="#project-status">Status</a> &mdash;
