@@ -1,9 +1,22 @@
 <!-- banner w logo -->
 ![Hunter's Handbook banner. A brown book logo with a purple bookmark and the words "Hunter's Handbook" next to it.](./img/banner-warm.png)
 <!-- # Hunter's Handbook -->
+<h4 align="center">A game-matched Twitch extension for Monster Hunter: World and Iceborne.</h4>
+<div style="text-align: center;">
+<a href="#about">About</a> &mdash;
+<a href="#project-status">Status</a> &mdash;
+<a href="#installation">Install</a> &mdash;
+<a href="#how-to-use">Usage</a> &mdash;
+<a href="#authors">Authors</a> &mdash;
+<a href="#support">Support</a> &mdash;
+<a href="#license">License</a> &mdash;
+<a href="#attributions--acknowledgements">Attributions</a>
+</div>
+
+---  
 
 ## About
-Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search monster name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances.
+Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search by name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances. 
 <!-- need some examples here -->
 ![Hunter's Handbook search screenshot. Search term is "Ancient Forest" and the monster named "Grimalkyne" is highlighted in green](./img/Screen_Shot_2019-10-11_at_5.32.50_PM.png)
 ![Hunter's Handbook screenshot. Details view for the monster named "Kirin". Includes weaknesses, locations, brief description, etc](./img/Screen_Shot_2019-10-11_at_5.37.00_PM.png)
@@ -26,7 +39,10 @@ Follow these instructions to install the Hunter's Handbook extension on your Twi
 1. Head to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions/manage` and Hunter's Handbook should now be under the "Installed" column
 1. Click the "Activate" dropdown and select "Set as Overlay 1" in order to activate it on your channel
 > NOTE: You can only have 1 (one) overlay extension enabled on your Twitch channel at any one time. If you decide to activate Hunter's Handbook, any previous overlay extension will likely be disabled as a result.
-8. That's it! You're done. 
+8. That's all the config you need! Check out the [usage instructions](#how-to-use) if you need to know where to go from here!  
+
+[Back to top](#)  
+
 ### Using the dev server
 Follow these instructions to run the Hunter's Handbook React app locally on your machine  
 1. Clone this repo or fork it
@@ -34,10 +50,28 @@ Follow these instructions to run the Hunter's Handbook React app locally on your
 1. Run `yarn install` or `npm install` in your terminal to install dependencies
 1. Run `yarn start` or `npm run start` in your terminal to start the dev server
 
+## How to Use 
+(Haven't installed it yet? Check [here](#installation))  
+1. Hover over the Twitch video player to bring up the Hunter's Handbook search icon  
+    - It's the brown book with purple bookmark on the left side of the player (the one without the purple box around it)  
+2. Click the Hunter's Handbook icon to bring up the search box  
+3. Enter a search term (monster name or monster location) to bring up some results  
+4. Click a result to bring up a "details" view for the selected monster  
+
+Usage Notes:  
+- Use the white arrow in the top left to minimize Hunter's Handbook to the book icon state  
+- If you mouse out of the Twitch player, Hunter's Handbook will fade into the background, quietly saving your place  
+- Hunter's Handbook is "always on" on mobile (no hover or mouseover necessary to bring it up)
+<!-- gif -->
+
 ## Authors
 Kevon Eaglin - [@keagl1n](https://twitter.com/keagl1n "Kevon's Twitter")  
 Matt Cool - [matthewbcool](https://github.com/matthewbcool "Matt's GitHub") 
 <!-- pics and links -->
+
+## Support 
+You can reach out to us using the links above with any support needs, concerns, or even feedback. 
+Or email us <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">here</a>!
 
 ## License
 This project is licensed under AGPL 3.0. The gist is that you're free to modify it, distribute it, and even use it commercially, given certain conditions are met. See [LICENSE](https://github.com/keaglin/hunters-handbook/blob/master/LICENSE) for more detailed information.
@@ -53,3 +87,16 @@ We are super grateful to have found so many good resources that allowed us to ge
 - Twitch Dev's [Bot Commander](https://github.com/twitchdev/bot-commander)
 - Handbook Icon: [Rafael Chiamenti](https://www.artstation.com/rafaelchm)
 - [Monster Hunter World](https://www.monsterhunter.com/world-iceborne/us/ "Monster Hunter World Official Website")
+
+
+<div style="text-align: center;">
+<a href="#">Top</a> &mdash;
+<a href="#about">About</a> &mdash;
+<a href="#project-status">Status</a> &mdash;
+<a href="#installation">Install</a> &mdash;
+<a href="#how-to-use">Usage</a> &mdash;
+<a href="#authors">Authors</a> &mdash;
+<a href="#support">Support</a> &mdash;
+<a href="#license">License</a> &mdash;
+<a href="#attributions--acknowledgements">Attributions</a>
+</div>
