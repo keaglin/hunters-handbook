@@ -1,9 +1,10 @@
 @font-face {
   font-family: 'Cardo';
-  src: local('Cardo'), url(./fonts/cardo/Cardo-Italic.ttf) format('truetype');
+  src: local('Cardo'), url('./fonts/cardo/Cardo-Italic.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Noto Serif';
-  src: local('Noto Serif'), url(./fonts/noto-serif/NotoSerif-BoldItalic.ttf) format('truetype');
+  src: local('Noto Serif'),
+    url('./fonts/noto-serif/NotoSerif-BoldItalic.ttf') format('truetype');
 }
