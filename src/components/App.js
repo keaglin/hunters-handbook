@@ -117,12 +117,12 @@ const App = forwardRef((props, searchRef) => {
     </HitItemWrapper>
   )
 
-  const TestBounds = () => (
-    <div>
-      <h1>Testing Bounds</h1>
-      {testBounds()}
-    </div>
-  )
+  // const TestBounds = () => (
+  //   <div>
+  //     <h1>Testing Bounds</h1>
+  //     {testBounds()}
+  //   </div>
+  // )
 
   const Search = (
     <SearchWrapper ref={searchRef}>
