@@ -1,7 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import Details from './Details'
+import React, { 
+  useState, 
+  useEffect, 
+  createRef, 
+  forwardRef 
+} from 'react'
 import algoliasearch from 'algoliasearch/lite'
 import { InstantSearch } from 'react-instantsearch-dom'
+import { isMobile } from 'react-device-detect'
+import { useTransition, animated } from 'react-spring'
+import Details from './Details'
 import HandBookIcon from './HandBookIcon'
 import {
   HitItemWrapper,
@@ -11,21 +18,50 @@ import {
   CloseBox,
   TempWrapper
 } from '../styles.js'
-import { isMobile } from 'react-device-detect'
-import { useTransition, animated } from 'react-spring'
 
 const searchClient = algoliasearch(
   'MT2HPEHTBE',
   '91b84fdc5b74fbe6ecc908f7738f0e82'
 )
 
-const App = () => {
-  const [toggleDetails, setToggleDetails] = useState(false)
-  const [currentMonsterName, setMonsterName] = useState('')
-  const [isHovering, setIsHovering] = useState(false)
-  const [toggleEntryIcon, setToggleEntryIcon] = useState(true)
-  const [isSearching, setIsSearching] = useState(false)
+
+
+const searchRef = createRef()
+const detailRef = createRef()
+const App = forwardRef((props, searchRef) => {
+  const [toggleDetails, setToggleDetails]           = useState(false)
+  const [currentMonsterName, setMonsterName]        = useState('')
+  const [isHovering, setIsHovering]                 = useState(true)
+  const [toggleEntryIcon, setToggleEntryIcon]       = useState(true)
+  const [isSearching, setIsSearching]               = useState(true)
   const [currentSearchValue, setCurrentSearchValue] = useState('')
+
+  // window.twitch.ext.onContext((ctx, ctxPropList) => {
+  //   let displayResolution = 0
+  //   let dimensions = {}
+  //   // get display resolution
+  //   if (ctxPropList.includes(displayResolution)) {
+  //     displayResolution = ctx.displayResolution
+  //   }
+  //   // determine position of search/details box
+  //   if (searchRef.current) {
+  //     dimensions = searchRef.current.getBoundingClientRect()
+  //   }
+  //   // if the bottom is outside the bounds of the display res
+  //   // then shorten it?
+  //   console.log(ctx)
+  // })
+
+  // const testBounds = () => {
+  //   let dimensions;
+  //   // if (searchRef) {
+  //   //   return searchRef
+  //   // }
+  //   // if (searchRef.current) {
+  //   //   dimensions = searchRef.current.getBoundingClientRect()
+  //   //   return [...dimensions]
+  //   // }
+  // }
 
   useEffect(() => {
     if (isMobile) {
@@ -58,7 +94,7 @@ const App = () => {
   }
 
   const handleMouseExit = () => {
-    setIsHovering(false)
+    setIsHovering(true)
   }
 
   const handleCloseSearch = () => {
@@ -81,8 +117,15 @@ const App = () => {
     </HitItemWrapper>
   )
 
+  const TestBounds = () => (
+    <div>
+      <h1>Testing Bounds</h1>
+      {testBounds()}
+    </div>
+  )
+
   const Search = (
-    <SearchWrapper>
+    <SearchWrapper ref={searchRef}>
       <CloseBox onClick={handleCloseSearch}>
         <img src='./img/back-arw.svg' alt='back-to-book' />
       </CloseBox>
@@ -129,8 +172,9 @@ const App = () => {
   return (
     <TempWrapper onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit}>
       {AnimatedHandBook}
+      {/* <TestBounds /> */}
     </TempWrapper>
   )
-}
+})
 
 export default App
