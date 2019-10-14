@@ -68,7 +68,7 @@ Follow these instructions to run the Hunter's Handbook React app locally on your
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="https://keaglin.com"><img src="https://avatars0.githubusercontent.com/u/1952896?v=4" width="100px;" alt="Kevon Eaglin"/><br /><sub><b>Kevon Eaglin</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/commits?author=keaglin" title="Code">💻</a></td> <td align="center"><a href="https://matthewbcool.github.io/portfolio/"><img src="https://avatars2.githubusercontent.com/u/4493657?v=4" width="100px;" alt="Matt"/><br /><sub><b>Matt</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/issues?q=author%3Amatthewbcool" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://keaglin.com"><img src="https://avatars0.githubusercontent.com/u/1952896?v=4" width="100px;" alt="Kevon Eaglin"/><br /><sub><b>Kevon Eaglin</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/commits?author=keaglin" title="Code">💻</a></td> <td align="center"><a href="https://matthewbcool.github.io/portfolio/"><img src="https://avatars2.githubusercontent.com/u/4493657?v=4" width="100px;" alt="Matt"/><br /><sub><b>Matt</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/commits?author=matthewbcool" title="Code">💻</a></td>
   </tr>
 </table>
 
