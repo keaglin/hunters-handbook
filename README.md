@@ -15,8 +15,8 @@
 ---  
 
 ## About
-Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search by name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances. 
-<!-- need some examples here -->
+Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search by name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances.  
+
 ![Hunter's Handbook search screenshot. Search term is "Ancient Forest" and the monster named "Grimalkyne" is highlighted in green](./img/Screen_Shot_2019-10-11_at_5.32.50_PM.png)
 ![Hunter's Handbook screenshot. Details view for the monster named "Kirin". Includes weaknesses, locations, brief description, etc](./img/Screen_Shot_2019-10-11_at_5.37.00_PM.png)
 
@@ -52,12 +52,12 @@ Hoooomg. We actually have a long wishlist of cool features, including:
 - We're excited to see what features users are interested in!  
 
 ## Project status
-Pre-release  
-Under active development as of 10/13/19  
+v0.0.1 officially released! 🎉  
+v0.0.2 underway  
+Under active development as of 10/14/19  
 
 ## Installation  
 ### Installing the Hunter's Handbook extension on Twitch  
-> NOTE: This extension is currently in the pre-release/testing phase. If you want to install it, you must be whitelisted and will receive a warning that it's in testing. The extension will be functional, but only whitelisted users can see and interact with it at this time. Once released officially, it will be available for use and interaction by all users.
 Follow these instructions to install the Hunter's Handbook extension on your Twitch channel (upon release)  
 1. Go to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions` on Twitch
 1. Search for "Hunter's Handbook"
@@ -91,16 +91,20 @@ Follow these instructions to run the Hunter's Handbook React app locally on your
 - Use the white arrow in the top left to minimize Hunter's Handbook to the book icon state  
 - If you mouse out of the Twitch player, Hunter's Handbook will fade into the background, quietly saving your place  
 - Hunter's Handbook is "always on" on mobile (no hover or mouseover necessary to bring it up)
-<!-- gif -->
+<!-- gif or vid embed -->
 
 ## Authors
-Kevon Eaglin - [@keagl1n](https://twitter.com/keagl1n "Kevon's Twitter")  
-Matt Cool - [matthewbcool](https://github.com/matthewbcool "Matt's GitHub") 
-<!-- pics and links -->
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://keaglin.com"><img src="https://avatars0.githubusercontent.com/u/1952896?v=4" width="100px;" alt="Kevon Eaglin"/><br /><sub><b>Kevon Eaglin</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/commits?author=keaglin" title="Code">💻</a></td> <td align="center"><a href="https://matthewbcool.github.io/portfolio/"><img src="https://avatars2.githubusercontent.com/u/4493657?v=4" width="100px;" alt="Matt"/><br /><sub><b>Matt</b></sub></a><br /><a href="https://github.com/keaglin/hunters-handbook/commits?author=matthewbcool" title="Code">💻</a></td>
+  </tr>
+</table>
+
 
 ## Support 
-You can reach out to us using the links above with any support needs, concerns, or even feedback. 
-Or email us <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">here</a>!
+You can reach out to us with any support needs, concerns, or even feedback. Email us <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">here</a>!
 
 ## License
 This project is licensed under AGPL 3.0. The gist is that you're free to modify it, distribute it, and even use it commercially, given certain conditions are met. See [LICENSE](https://github.com/keaglin/hunters-handbook/blob/master/LICENSE) for more detailed information.  

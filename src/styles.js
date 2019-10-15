@@ -58,6 +58,8 @@ export const SearchInput = styled(SearchBox)`
     outline: none;
   }
   input {
+    -webkit-appearance: none;
+    border-radius: 0;
     border: none;
     color: white;
     font-size: 1.7rem;
@@ -161,8 +163,12 @@ export const SearchWrapper = styled.div`
   @media ${breakpoint.tablet} {
     padding: 0;
     margin: 0;
-    width: 350px;
-    height: 100%;
+    width: 450px;
+  }
+  @media ${breakpoint.mobileL} {
+    padding: 0;
+    margin: 0;
+    width: 330px;
   }
 `
 
@@ -219,7 +225,7 @@ export const DetailWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0rem 1rem;
-  max-height: 800px;
+  height: 460px;
   max-width: 800px;
   margin-top: 10px;
   margin-left: 10px;
@@ -238,6 +244,15 @@ export const DetailWrapper = styled.div`
   li {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  @media ${breakpoint.tablet} {
+    margin: 0;
+    width: 880px;
+  }
+  @media ${breakpoint.mobileL} {
+    padding: 5px;
+    margin: 0;
+    width: 330px;
   }
 
   ${detailScrollbarStyles}
@@ -282,8 +297,12 @@ export const TypeSpeciesWrapper = styled.div`
 export const WeaknessDescriptionWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+
   @media ${breakpoint.tablet} {
     margin-left: 30px;
+  }
+  @media ${breakpoint.mobileL} {
+    margin: 0;
   }
 `
 
@@ -303,7 +322,6 @@ export const MonsterDetailElement = styled.div`
 export const MonsterDetailHeading = styled.h3`
   border-bottom: 1px dashed grey;
   color: #61efff;
-  font-family: 'Cardo', serif;
   padding-bottom: 3px;
   margin: 0;
   margin-bottom: 1rem;
@@ -316,6 +334,7 @@ export const BackBtn = styled.button`
   font-size: 1.2rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  user-select: none;
   border-radius: 3px;
   outline: 3px single white;
   background-image: linear-gradient(to top, #000 0%, #333 65%, #61efff 100%);
@@ -334,5 +353,9 @@ export const TempWrapper = styled.div`
   width: 100%;
   padding-top: 5rem;
   padding-right: 7rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
+  @media ${breakpoint.mobileL} {
+    margin: 0;
+    padding-right: 0;
+  }
 `

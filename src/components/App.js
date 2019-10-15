@@ -110,6 +110,14 @@ const App = forwardRef((props, searchRef) => {
     enter: { opacity: 1, transform: 'translate3d(30px,0px,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50px,0px,0)' }
   })
+  const mobileTransitions = useTransition(isHovering, null, {
+    from: {
+      opacity: 0,
+      transform: 'translate3d(0px,0px,0)'
+    },
+    enter: { opacity: 1, transform: 'translate3d(0px,0px,0)' },
+    leave: { opacity: 0, transform: 'translate3d(-50px,0px,0)' }
+  })
 
   const Hit = ({ hit }) => (
     <HitItemWrapper onClick={() => handleMonsterClick(hit.name)} tabIndex='0'>
@@ -156,18 +164,31 @@ const App = forwardRef((props, searchRef) => {
     Search
   )
 
-  const AnimatedHandBook = transitions.map(
-    ({ item, key, props }) =>
-      item && (
-        <animated.div key={key} style={props}>
-          {toggleEntryIcon && !isSearching ? (
-            <HandBookIcon handleClick={handleIconClick} />
-          ) : (
-            renderSearch
-          )}
-        </animated.div>
+  const AnimatedHandBook = isMobile
+    ? mobileTransitions.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              {toggleEntryIcon && !isSearching ? (
+                <HandBookIcon handleClick={handleIconClick} />
+              ) : (
+                renderSearch
+              )}
+            </animated.div>
+          )
       )
-  )
+    : transitions.map(
+        ({ item, key, props }) =>
+          item && (
+            <animated.div key={key} style={props}>
+              {toggleEntryIcon && !isSearching ? (
+                <HandBookIcon handleClick={handleIconClick} />
+              ) : (
+                renderSearch
+              )}
+            </animated.div>
+          )
+      )
 
   return (
     <TempWrapper onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseExit}>
