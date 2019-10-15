@@ -2,8 +2,6 @@ import styled from 'styled-components'
 import { SearchBox, Hits } from 'react-instantsearch-dom'
 import { breakpoint } from './lib/breakpoints'
 import './index.css'
-// import './fonts/cardo/Cardo-Regular.ttf'
-// import './fonts/noto-serif/NotoSerif-Regular.ttf'
 
 export const HandBookWrapper = styled.div`
   height: 60px;
@@ -60,6 +58,8 @@ export const SearchInput = styled(SearchBox)`
     outline: none;
   }
   input {
+    -webkit-appearance: none;
+    border-radius: 0;
     border: none;
     color: white;
     font-size: 1.7rem;
