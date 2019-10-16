@@ -15,19 +15,49 @@
 ---  
 
 ## About
-Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search by name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances. 
-<!-- need some examples here -->
+Hunter's Handbook is all the power of a search engine for Monster Hunter: World (and Iceborne) right in your Twitch stream. Search by name or location to find the monster you're seeking. You'll find general info as well as strategic stats like weaknesses and resistances.  
+
 ![Hunter's Handbook search screenshot. Search term is "Ancient Forest" and the monster named "Grimalkyne" is highlighted in green](./img/Screen_Shot_2019-10-11_at_5.32.50_PM.png)
 ![Hunter's Handbook screenshot. Details view for the monster named "Kirin". Includes weaknesses, locations, brief description, etc](./img/Screen_Shot_2019-10-11_at_5.37.00_PM.png)
 
+### Inspiration  
+Monster Hunter: World throws a ton of information at you (player and viewer alike) from the moment you jump into battle. There are so many different aspects and data points that inform and impact both strategy and outcome. We wanted to build something to empower both parties with the knowledge needed to navigate that landscape. Plus we thought the possibility for interaction was a cool bonus. Streamers can get a quick tip from their audience and viewers can make accurate suggestions and chat amongst themselves. All without leaving the channel.  
+
+### How we built it  
+- Bootstrapped with Create React App  
+- Rescripts to rewire webpack to include custom settings to make the application do what we needed for it to work on Twitch  
+- Discord, Twitch Dev Office Hours (Thanks Jameka!) and, of course, the ancient art of Google-fu  
+- Paying careful attention to design docs and requirements  
+- Late nights, early mornings, blood, sweat, tears  
+
+### Challenges we ran into  
+- Designing a responsive "web app" meant to live in an iFrame  
+- Customizing webpack for Create React App without ejecting  
+- Animations  
+- Condensing several sources of data into a unified database  
+
+### Accomplishments that we're proud of  
+We overcame all the hurdles above, harnessed all the resources available to us and pulled this project together. If you think about it, it's kind of amazing. We didn't know each other. We met on DevPost in the "looking for teammates" section. And just agreed to work together. We ended up meshing really well and just started brainstorming and ideating. And continued from there. Neither of us has ever built anything for Twitch before. We both have whole lives with obligations, jobs, etc. And we did it! We couldn't be prouder of each other and what we've done here. Honestly.  
+
+### What we learned  
+First rule of understanding how webpack works? You don't understand how webpack works. XD  
+
+### What's next for Hunter's Handbook  
+Hoooomg. We actually have a long wishlist of cool features, including:  
+- Keyboard navigability  
+- Expand the handbook to include items, equipment, etc that aren't currently indexed  
+- UI for searching for monsters per location (locations are indexed but the UI isn't there yet)  
+- Slicker MHW-like animations (think: the green orb in the dark menus on MHW)  
+- More icons and imagery! For example, elemental icons for resistances and weaknesses, ailments, etc to aid with quick scannability and overall readability  
+- We're excited to see what features users are interested in!  
 
 ## Project status
-Pre-release  
-Under active development as of 10/13/19  
+v0.0.1 officially released! 🎉  
+v0.0.2 underway  
+Under active development as of 10/14/19  
 
 ## Installation  
 ### Installing the Hunter's Handbook extension on Twitch  
-> NOTE: This extension is currently in the pre-release/testing phase. If you want to install it, you must be whitelisted and will receive a warning that it's in testing. The extension will be functional, but only whitelisted users can see and interact with it at this time. Once released officially, it will be available for use and interaction by all users.
 Follow these instructions to install the Hunter's Handbook extension on your Twitch channel (upon release)  
 1. Go to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions` on Twitch
 1. Search for "Hunter's Handbook"
@@ -61,7 +91,7 @@ Follow these instructions to run the Hunter's Handbook React app locally on your
 - Use the white arrow in the top left to minimize Hunter's Handbook to the book icon state  
 - If you mouse out of the Twitch player, Hunter's Handbook will fade into the background, quietly saving your place  
 - Hunter's Handbook is "always on" on mobile (no hover or mouseover necessary to bring it up)
-<!-- gif -->
+<!-- gif or vid embed -->
 
 ## Authors
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -74,8 +104,7 @@ Follow these instructions to run the Hunter's Handbook React app locally on your
 
 
 ## Support 
-You can reach out to us using the links above with any support needs, concerns, or even feedback. 
-Or email us <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">here</a>!
+You can reach out to us with any support needs, concerns, or even feedback. Email us <a href="mailto:dev@keaglin.com, cooldevlabs@gmail.com?subject=Hunter's Handbook Support">here</a>!
 
 ## License
 This project is licensed under AGPL 3.0. The gist is that you're free to modify it, distribute it, and even use it commercially, given certain conditions are met. See [LICENSE](https://github.com/keaglin/hunters-handbook/blob/master/LICENSE) for more detailed information.  
