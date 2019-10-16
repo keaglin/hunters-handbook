@@ -94,7 +94,7 @@ const App = forwardRef((props, searchRef) => {
   }
 
   const handleMouseExit = () => {
-    setIsHovering(true)
+    setIsHovering(false)
   }
 
   const handleCloseSearch = () => {
