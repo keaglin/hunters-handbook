@@ -19,6 +19,7 @@ Hunter's Handbook is all the power of a search engine for Monster Hunter: World 
 
 ![Hunter's Handbook search screenshot. Search term is "Ancient Forest" and the monster named "Grimalkyne" is highlighted in green](./img/Screen_Shot_2019-10-11_at_5.32.50_PM.png)
 ![Hunter's Handbook screenshot. Details view for the monster named "Kirin". Includes weaknesses, locations, brief description, etc](./img/Screen_Shot_2019-10-11_at_5.37.00_PM.png)
+<img src="./img/mobile-Screenshot_20191015-131507_Twitch.jpg" alt="Hunter's Handbook mobile screenshot on an Android phone" width="50%" />
 
 ### Inspiration  
 Monster Hunter: World throws a ton of information at you (player and viewer alike) from the moment you jump into battle. There are so many different aspects and data points that inform and impact both strategy and outcome. We wanted to build something to empower both parties with the knowledge needed to navigate that landscape. Plus we thought the possibility for interaction was a cool bonus. Streamers can get a quick tip from their audience and viewers can make accurate suggestions and chat amongst themselves. All without leaving the channel.  
@@ -54,11 +55,12 @@ Hoooomg. We actually have a long wishlist of cool features, including:
 ## Project status
 v0.0.1 officially released! 🎉  
 v0.0.2 underway  
-Under active development as of 10/14/19  
+Under active development as of 10/15/19  
 
 ## Installation  
 ### Installing the Hunter's Handbook extension on Twitch  
-Follow these instructions to install the Hunter's Handbook extension on your Twitch channel (upon release)  
+Follow these instructions to install the Hunter's Handbook extension on your Twitch channel  
+
 1. Go to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions` on Twitch
 1. Search for "Hunter's Handbook"
 1. Look for the latest version (currently, v0.0.1. You can find the version number in bottom right corner of the preview image)

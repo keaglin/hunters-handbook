@@ -72,7 +72,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/7/72/MHW-Aptonoth_Icon.png/revision/latest",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/4b/MH4-Aptonoth_Render_001_copy.jpg"
   },
   {
     "id": 2,
@@ -238,7 +238,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/8/84/MHW-Vespoid_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221316",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b2/MHGen-Vespoid_Render_001_copy.jpg"
   },
   {
     "id": 5,
@@ -295,7 +295,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/1/18/MHW-Mosswine_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221314",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/84/MHGen-Mosswine_Render_001_copy.jpg"
   },
   {
     "id": 6,
@@ -360,7 +360,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/1/19/MHW-Apceros_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221312",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/48/MH4U-Apceros_Render_001_copy.jpg"
   },
   {
     "id": 7,
@@ -486,7 +486,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/1/12/MHW-Gajau_Icon.png/revision/latest/scale-to-width-down/48?cb=20180128024204",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/49/3rdGen-Fish_Render_005_copy.jpg"
   },
   {
     "id": 10,
@@ -538,7 +538,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/7/7c/MHW-Kelbi_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221314",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3c/MH4-Kelbi_Render_001_copy.jpg"
   },
   {
     "id": 11,
@@ -575,7 +575,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/3/3d/MHW-Raphinos_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221315",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a4/MHW-Raphinos_Render_001_copy.jpg"
   },
   {
     "id": 12,
@@ -664,7 +664,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/1/11/MHW-Girros_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128024205",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/51/Girros.jpg"
   },
   {
     "id": 14,
@@ -701,7 +701,7 @@
     "breaks": [],
     "weakSpots": [],
     "icon": "https://vignette.wikia.nocookie.net/monsterhunter/images/9/9c/MHW-Hornetaur_Icon.png/revision/latest/scale-to-width-down/50?cb=20180128221313",
-    "image": ""
+    "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/ab/MHGen-Hornetaur_Render_001_copy.jpg"
   },
   {
     "id": 15,
@@ -1042,7 +1042,28 @@
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
     "locations": [
       {
@@ -1110,8 +1131,13 @@
       }
     ],
     "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "breaks": [ "head", "forelegs" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": []
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/90/Kulu-Ya-Ku12.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c1/Kulu.jpg"
   },
@@ -10868,7 +10894,7 @@
     "rewards": [
       {
         "item": {
-          "name": "Barioth Cortex ",
+          "name": "Barioth Cortex",
           "description": "",
           "rarity": 5,
           "carryLimit": "",
@@ -10997,10 +11023,52 @@
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "fire" ],
+    "weaknesses": [
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
@@ -11016,82 +11084,588 @@
       }
     ],
     "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "breaks": [ "head", "forearms", "back", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/32/Glavenusicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e1/Glavenus.jpg"
   },
   {
     "id": 64,
     "name": "Brachydios",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "brute wyvern",
+    "description": "A returning monster from previous games, Brachydios has slime it secretes from its mouth and horn that has explosive properties. It will lick the pounders on its forearms and leave pools of this slime that will explode after a short time. It also features a large mace like tail it uses to try and pound opponents into the dust.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 1
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "fire" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Elder's Recess"
       }
     ],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Brachydios Cortex",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fine Brachydios Ebonshell",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Brachydios Pounder+",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Brachydios Crown",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Brachydios Lash",
+          "description": "",
+          "rarity": 2,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Brachydios Pallium",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forearms", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "forearm",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/Brachydiosicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b6/Brachyrender.jpg"
   },
   {
     "id": 65,
     "name": "Ebony Odogaron",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "fanged wyvern",
+    "description": "While the standard Odogaron features quick attacks and some short bursts of fire and dragon element, Ebony Odogaron is an the standard version on steroids.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 3
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 3
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
     "resistances": [],
-    "weaknesses": [],
+    "weaknesses": [
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Coral Highlands"
+      },
+      {
+        "name": "Wildspire Waste"
+      },
+      {
+        "name": "Ancient Forest"
+      },
+      {
+        "name": "Elder's Recess"
+      },
+      {
+        "name": "Rotten Vale"
+      },
+      {
+        "name": "Hoarfrost Reach"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Hard Ebony Odogaron Sinew",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Ebony Odogaron Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Ebony Odogaron Hardclaw",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Ebony Odogaron Hardfang",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Ebony Odogaron Mantle",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forelegs", "backlegs", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "forelegs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 1
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 1
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 1
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/79/Ebony_Odogaronicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/5/55/EbonyOdogaron.jpg"
   },
   {
     "id": 66,
     "name": "Yian Garuga",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "bird wyvern",
+    "description": "A returning monster from previous games, Yian Garuga is a ticked off Bird Wyvern looking for a hunter to chase.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 3
+        },
+        {
+          "name": "sleep",
+          "stars": 1
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 3
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "fire", "thunder" ],
+    "weaknesses": [
+      {
+        "element": "water",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
-        "name": "More Hunting Required!"
+        "name": "The Guiding Lands"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Garuga Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Garuga Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Garuga Silverpelt",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fancy Beak",
+          "description": "",
+          "rarity": 2,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Garuga Fellwing",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fey Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "ears", "wings", "stomach", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "tail tip",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/49/Yian_Garugaicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/42/EDJbBbIVUAIQwnP.jpg"
   },
@@ -11123,91 +11697,588 @@
   {
     "id": 68,
     "name": "Coral Pukei-Pukei",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "bird wyvern",
+    "description": "A brightly colored bird wyvern that stockpiles water inside its body, fortified by the plant life it consumes.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 3
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 1
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "water" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Coral Highlands"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Coral Pukei-Pukei Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Coral Pukei-Pukei Fellwing",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Coral Pukei-Pukei Shard",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Coral Pukei-Pukei Lash",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Coral Pukei-Pukei Sac",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fey Wyvern Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "wings", "back", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "wings",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1e/Coral_Pukei-Pukeiicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/30/CoralPukei.jpg"
   },
   {
     "id": 69,
     "name": "Velkhana",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "elder dragon",
+    "description": "An elder dragon encased in Ice, Velkhana is the Iceborne Wyvern. it's said that the monster can freeze all in its path, and according to legend, can control the cold, using freezing breath to conjure massive spires of ice out of thin air.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "blast",
+          "stars": 3
+        },
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 1
+        },
+        {
+          "name": "sleep",
+          "stars": 1
+        },
+        {
+          "name": "stun",
+          "stars": 1
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "ice" ],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Hoarfrost Reach"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Crystal Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Velkhana Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Velkhana Hardclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Velkhana Crownhorn",
+          "description": "",
+          "rarity": 2,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Velkhana Fellwing",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Velkhana Crystal",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "wings", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "wings",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 1
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/c/c3/Velkhanaicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/e/e7/Velkhana_Render.jpg"
   },
   {
     "id": 70,
     "name": "Shrieking Legiana",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "brute wyvern",
+    "description": "A subspecies of the familiar Legiana, Shrieking Legiana has the ability to coat itself in a layer of ice for defense. It specializes in freezing prey with the powerful chill it emits, swooping down to strike them from overhead.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 3
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "ice" ],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
-        "name": "Hoarfrost Reach"
+        "name": "Elder's Recess"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Rimed Hide",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Legiana Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Obsidian Icetalon",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Stark Wing",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Legiana Mantle",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "wings", "stomach" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "wings",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 1
+          }
+        ]
+      },
+      {
+        "part": "belly",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 1
+          },
+          {
+            "type": "blunt",
+            "stars": 1
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/2/22/Shrieking_Legianaicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/19/ShriekingLegiana.jpg"
   },
   {
     "id": 71,
     "name": "Tigrex",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "flying wyvern",
+    "description": "A returning flying wyvern straight out of prehistory from previous games, Tigrex is one of the few monsters that can deal damage with simply its powerful roar.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "fire" ],
+    "weaknesses": [
+      {
+        "element": "thunder",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
@@ -11230,109 +12301,835 @@
         "name": "Hoarfrost Reach"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Tigrex Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Tigrex Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Tigrex Hardclaw",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Tigrex Hardfang",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Tigrex Mantle",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forearms", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "forearm",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/3/3a/Tigrexicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/ac/Tigrex.jpg"
   },
   {
     "id": 72,
     "name": "Acidic Glavenus",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "brute wyvern",
+    "description": "A new subspecies to the ferocious Glavenus, the Acidic Glavenus features a sulphur covered tail. Found only in the rotting areas of the New World, a corrosive fluid has crystallized on its tail, spraying acid with each swing that can apply a debuff to those that get caught in it.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 2
+        }
+      ]
     },
     "resistances": [],
-    "weaknesses": [],
-    "locations": [
+    "weaknesses": [
       {
-        "id": 1,
-        "name": "More Hunting Required!"
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 3,
+        "condition": "crystalized"
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "thunder",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "locations": [
+      {
+        "id": 4,
+        "name": "Rotten Vale",
+        "zoneCount": 16
+      }
+    ],
+    "rewards": [
+      {
+        "item": {
+          "name": "Acidic Glavenus Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Acidic Glavenus Cortex",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Acidic Glavenus Hardfang",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Acidic Glavenus Spinehsell",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Acidic Glavenus Tailedge",
+          "description": "",
+          "rarity": 2,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Glavenus Mantle",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forearms", "back", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "neck",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/8/80/Acidic_Glavenusicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/f/f2/AcidicGlavenus.jpg"
   },
   {
     "id": 73,
     "name": "Fulgur Anjanath",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "brute wyvern",
+    "description": "A subspecies of the Anjanath, known as the Thunderjaw Wyvern, Fulgur Anjanath has a completely different element at its disposal, electricity.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "blast",
+          "stars": 1
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "thunder" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 5,
+        "condition": "charged"
+      },
+      {
+        "element": "water",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 5,
+        "condition": "charged"
+      },
+      {
+        "element": "fire",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Hoarfrost Reach"
+      },
+      {
+        "id": 1,
+        "name": "Ancient Forest",
+        "zoneCount": 17
+      },
+      {
+        "id": 3,
+        "name": "Wildspire Waste",
+        "zoneCount": 15
+      },
+      {
+        "id": 1,
+        "name": "Coral Highlands"
+      },
+      {
+        "id": 4,
+        "name": "Rotten Vale",
+        "zoneCount": 16
+      },
+      {
+        "id": 5,
+        "name": "Elder's Recess",
+        "zoneCount": 16
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Fulgur Anjanath Thickfur",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fulgur Anjanath Shard",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fulgur Anjanath Hardfang",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Heavy Fulgur Anjanath Nosebone",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Fulgur Anjanath Mantle",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "legs", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/0/05/Fulgur_Anjanathicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/7/7a/FulgurAnjanath.jpg"
   },
   {
     "id": 74,
     "name": "Namielle",
-    "type": "",
-    "species": "",
-    "description": "",
-    "elements": [],
+    "type": "large",
+    "species": "elder dragpm",
+    "description": "A new Elder Dragon to Iceborne, Namielle is coated in water and able to freely control lightning. A unique organ allows it to pump electricity into the pools of water it creates, causing large bursts of steam. It resembles the bioluminescent glow of something like the anglerfish or other deep sea based creatures.",
+    "elements": [ "water", "thunder" ],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "poison",
+          "stars": 3
+        },
+        {
+          "name": "blast",
+          "stars": 3
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 1
+        },
+        {
+          "name": "paralysis",
+          "stars": 1
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "water", "thunder" ],
+    "weaknesses": [
+      {
+        "element": "fire",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "ice",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
         "name": "Coral Highlands"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Namielle Finehide",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Namielle Hardclaw",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Namielle Fellwing",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Namielle Whisker",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Large Elder Dragon Gem",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forelegs", "wings", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "forelegs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "chest",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a4/Namielleicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d9/EDJa-FTU4AA8Ce1-2.jpg"
   },
   {
     "id": 75,
     "name": "Zinogre",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "fanged wyvern",
+    "description": "A returning fan favorite resembling an electric blue and gold wolf, Zinogre harnesses the static electricity found in the air and unleashes it on unexpecting hunters. Lightning courses through the fur and unique plating of this monster. It is most deadly in its supercharged state.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "stun",
+          "stars": 2
+        },
+        {
+          "name": "sleep",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 2
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "thunder" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
-        "name": "More Hunting Required!"
+        "name": "The Guiding Lands"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Zinogre Electrofur+",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Zinogre Cortex",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Zinogre Deahthly Shocker",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Zinogre Lash",
+          "description": "",
+          "rarity": 2,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Zinogre Hardclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Zinogre Skymerald",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "back", "forelegs", "tail (severable)" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "forelegs",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "tail",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/1/1f/Zinogreicon.jpg",
     "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/d/d5/EDJbBdZU4AEAjve.jpg"
   },
@@ -11414,9 +13211,9 @@
   {
     "id": 79,
     "name": "Ruiner Nergigante",
-    "type": "",
-    "species": "",
-    "description": "",
+    "type": "large",
+    "species": "elder dragon",
+    "description": "Countless battles have only hardened this Nergigante variant. In addition to healing, its spikes grow tougher as it loses health.",
     "elements": [],
     "ailments": {
       "used": [],
@@ -11438,26 +13235,316 @@
   },
   {
     "id": 80,
-    "name": "Shara Ishvalda",
-    "type": "",
-    "species": "",
-    "description": "",
+    "name": "Shara Ishvalda Stage 1",
+    "type": "large",
+    "species": "elder dragon",
+    "description": "A mysterious Elder Dragon able to manipulate the earth itself. Vibrations from its wingtips reshape the earth denying hunters footing.",
     "elements": [],
     "ailments": {
       "used": [],
-      "weak": []
+      "weak": [
+        {
+          "name": "blast",
+          "stars": 3
+        },
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 1
+        },
+        {
+          "name": "stun",
+          "stars": 1
+        }
+      ]
     },
-    "resistances": [],
-    "weaknesses": [],
+    "resistances": [ "sleep", "thunder" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      }
+    ],
     "locations": [
       {
         "id": 1,
-        "name": "More Hunting Required!"
+        "name": "Origin Isle"
       }
     ],
-    "rewards": [],
-    "breaks": [],
-    "weakSpots": [],
+    "rewards": [
+      {
+        "item": {
+          "name": "Shara Ishvalda Tenderscale",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Boulderplate",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Petalstone",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Tenderclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forelegs", "wings" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 3
+          }
+        ]
+      },
+      {
+        "part": "chest",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
+    "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/4b/Shara_Ishvaldaicon.jpg",
+    "image": ""
+  },
+  {
+    "id": 81,
+    "name": "Shara Ishvalda Stage 2",
+    "type": "large",
+    "species": "elder dragon",
+    "description": "A mysterious Elder Dragon able to manipulate the earth itself. Vibrations from its wingtips reshape the earth denying hunters footing.",
+    "elements": [],
+    "ailments": {
+      "used": [],
+      "weak": [
+        {
+          "name": "blast",
+          "stars": 2
+        },
+        {
+          "name": "poison",
+          "stars": 2
+        },
+        {
+          "name": "paralysis",
+          "stars": 1
+        },
+        {
+          "name": "stun",
+          "stars": 1
+        }
+      ]
+    },
+    "resistances": [ "sleep", "thunder" ],
+    "weaknesses": [
+      {
+        "element": "ice",
+        "stars": 3,
+        "condition": null
+      },
+      {
+        "element": "water",
+        "stars": 2,
+        "condition": null
+      },
+      {
+        "element": "dragon",
+        "stars": 1,
+        "condition": null
+      },
+      {
+        "element": "fire",
+        "stars": 1,
+        "condition": null
+      }
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "name": "Origin Isle"
+      }
+    ],
+    "rewards": [
+      {
+        "item": {
+          "name": "Shara Ishvalda Tenderscale",
+          "description": "",
+          "rarity": 5,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Boulderplate",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Petalstone",
+          "description": "",
+          "rarity": 4,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Tenderclaw",
+          "description": "",
+          "rarity": 3,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      },
+      {
+        "item": {
+          "name": "Shara Ishvalda Gem",
+          "description": "",
+          "rarity": 1,
+          "carryLimit": "",
+          "value": "",
+          "conditions": []
+        }
+      }
+    ],
+    "breaks": [ "head", "forelegs" ],
+    "weakSpots": [
+      {
+        "part": "head",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 3
+          },
+          {
+            "type": "blunt",
+            "stars": 3
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "wings",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      },
+      {
+        "part": "back",
+        "dmg": [
+          {
+            "type": "cut",
+            "stars": 2
+          },
+          {
+            "type": "blunt",
+            "stars": 2
+          },
+          {
+            "type": "ammo",
+            "stars": 2
+          }
+        ]
+      }
+    ],
     "icon": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/4b/Shara_Ishvaldaicon.jpg",
     "image": ""
   }
