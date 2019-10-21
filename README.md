@@ -44,7 +44,7 @@ We overcame all the hurdles above, harnessed all the resources available to us a
 First rule of understanding how webpack works? You don't understand how webpack works. XD  
 
 ### What's next for Hunter's Handbook  
-Hoooomg. We actually have a long wishlist of cool features, including:  
+We actually have a long wishlist of cool features, including:  
 - Keyboard navigability  
 - Expand the handbook to include items, equipment, etc that aren't currently indexed  
 - UI for searching for monsters per location (locations are indexed but the UI isn't there yet)  
@@ -60,10 +60,7 @@ Under active development as of 10/21/19
 ### Installing the Hunter's Handbook extension on Twitch  
 Follow these instructions to install the Hunter's Handbook extension on your Twitch channel  
 
-1. Go to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions` on Twitch
-1. Search for "Hunter's Handbook"
-1. Look for the latest version (currently, v0.0.1. You can find the version number in bottom right corner of the preview image)
-1. Hover over the latest version for a dialog box that gives you 2 buttons (Details and Install)
+1. Go to https://www.twitch.tv/ext/ooxsaqhgb6q1ky0z15285umuhfnyg5-0.0.2
 1. Click "Install"
 1. Head to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions/manage` and Hunter's Handbook should now be under the "Installed" column
 1. Click the "Activate" dropdown and select "Set as Overlay 1" in order to activate it on your channel
