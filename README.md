@@ -53,9 +53,8 @@ Hoooomg. We actually have a long wishlist of cool features, including:
 - We're excited to see what features users are interested in!  
 
 ## Project status
-v0.0.1 officially released! 🎉  
-v0.0.2 underway  
-Under active development as of 10/15/19  
+v0.0.2 officially released! 🎉  
+Under active development as of 10/21/19  
 
 ## Installation  
 ### Installing the Hunter's Handbook extension on Twitch  
