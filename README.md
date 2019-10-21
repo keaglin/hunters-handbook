@@ -61,11 +61,11 @@ Under active development as of 10/21/19
 Follow these instructions to install the Hunter's Handbook extension on your Twitch channel  
 
 1. Go to https://www.twitch.tv/ext/ooxsaqhgb6q1ky0z15285umuhfnyg5-0.0.2
-1. Click "Install"
+1. Click "Install" in the top right corner
 1. Head to `https://www.twitch.tv/<YOUR_TWITCH_USERNAME>/dashboard/extensions/manage` and Hunter's Handbook should now be under the "Installed" column
 1. Click the "Activate" dropdown and select "Set as Overlay 1" in order to activate it on your channel
 > NOTE: You can only have 1 (one) overlay extension enabled on your Twitch channel at any given time. If you decide to activate Hunter's Handbook, any other overlay extension will likely be disabled as a result.
-8. That's all the config you need! Check out the [usage instructions](#how-to-use) if you need to know where to go from here!  
+5. That's all the config you need! Check out the [usage instructions](#how-to-use) if you need to know where to go from here!  
 
 [Back to top](#doc-top)  
 
